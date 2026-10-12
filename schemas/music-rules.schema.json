@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cobblemon Custom Battle Music API rule document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "rules"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "priority": { "$ref": "#/$defs/priority" },
+    "rules": { "type": "array", "items": { "$ref": "#/$defs/rule" } },
+    "categories": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[A-Za-z0-9_.-]+$" },
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/speciesSelector" }
+      }
+    }
+  },
+  "$defs": {
+    "priority": {
+      "type": "integer",
+      "minimum": -2147483648,
+      "maximum": 2147483647
+    },
+    "speciesId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]+:[A-Za-z0-9/._-]+$"
+    },
+    "soundId": { "type": "string", "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$" },
+    "speciesSelector": {
+      "oneOf": [
+        { "$ref": "#/$defs/speciesId" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["species"],
+          "properties": {
+            "species": { "$ref": "#/$defs/speciesId" },
+            "form": { "type": "string", "minLength": 1, "pattern": "\\S" }
+          }
+        }
+      ]
+    },
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "match", "sound"],
+      "properties": {
+        "type": { "enum": ["trainer", "trainer_name", "species", "category"] },
+        "match": { "type": "string", "minLength": 1, "pattern": "\\S" },
+        "sound": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/soundId" }
+        },
+        "priority": { "$ref": "#/$defs/priority" },
+        "form": { "type": "string", "minLength": 1, "pattern": "\\S" },
+        "scope": { "enum": ["wild", "trainer", "any"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "trainer" } } },
+          "then": {
+            "properties": {
+              "match": {
+                "pattern": "^[A-Za-z0-9_.-]+(?::[A-Za-z0-9_.-]+)?(?:/[A-Za-z0-9_.-]+)*$"
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "species" } } },
+          "then": {
+            "properties": {
+              "match": { "$ref": "#/$defs/speciesId" }
+            }
+          },
+          "else": { "not": { "required": ["form"] } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "category" } } },
+          "then": {
+            "properties": {
+              "match": { "pattern": "^[A-Za-z0-9_.-]+$" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "enum": ["trainer", "trainer_name"] } }
+          },
+          "then": {
+            "properties": {
+              "scope": { "const": "trainer" }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

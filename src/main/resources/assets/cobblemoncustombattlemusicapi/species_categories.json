@@ -1,0 +1,3472 @@
+{
+  "cobblemon:abomasnow": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen4"]
+  },
+  "cobblemon:abra": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:absol": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:accelgor": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:aegislash": {
+    "blade": ["gen6"],
+    "normal": ["gen6"]
+  },
+  "cobblemon:aerodactyl": {
+    "mega": ["fossil", "gen6", "mega"],
+    "normal": ["fossil", "gen1"]
+  },
+  "cobblemon:aggron": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:aipom": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:alakazam": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:alcremie": {
+    "caramelswirl": ["gen8"],
+    "gmax": ["gen8", "gmax"],
+    "lemoncream": ["gen8"],
+    "matchacream": ["gen8"],
+    "mintcream": ["gen8"],
+    "normal": ["gen8"],
+    "rainbowswirl": ["gen8"],
+    "rubycream": ["gen8"],
+    "rubyswirl": ["gen8"],
+    "saltedcream": ["gen8"]
+  },
+  "cobblemon:alomomola": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:altaria": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:amaura": {
+    "normal": ["fossil", "gen6"]
+  },
+  "cobblemon:ambipom": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:amoonguss": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:ampharos": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen2"]
+  },
+  "cobblemon:annihilape": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:anorith": {
+    "normal": ["fossil", "gen3"]
+  },
+  "cobblemon:appletun": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:applin": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:araquanid": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:arbok": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:arboliva": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:arcanine": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:arceus": {
+    "bug": ["gen4", "mythical"],
+    "dark": ["gen4", "mythical"],
+    "dragon": ["gen4", "mythical"],
+    "electric": ["gen4", "mythical"],
+    "fairy": ["gen6", "mythical"],
+    "fighting": ["gen4", "mythical"],
+    "fire": ["gen4", "mythical"],
+    "flying": ["gen4", "mythical"],
+    "ghost": ["gen4", "mythical"],
+    "grass": ["gen4", "mythical"],
+    "ground": ["gen4", "mythical"],
+    "ice": ["gen4", "mythical"],
+    "normal": ["gen4", "mythical"],
+    "poison": ["gen4", "mythical"],
+    "psychic": ["gen4", "mythical"],
+    "rock": ["gen4", "mythical"],
+    "steel": ["gen4", "mythical"],
+    "water": ["gen4", "mythical"]
+  },
+  "cobblemon:archaludon": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:archen": {
+    "normal": ["fossil", "gen5"]
+  },
+  "cobblemon:archeops": {
+    "normal": ["fossil", "gen5"]
+  },
+  "cobblemon:arctibax": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:arctovish": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:arctozolt": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:ariados": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:armaldo": {
+    "normal": ["fossil", "gen3"]
+  },
+  "cobblemon:armarouge": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:aromatisse": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:aron": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:arrokuda": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:articuno": {
+    "galar": ["galarian_form", "gen8", "legendary"],
+    "normal": ["gen1", "kantonian_form", "legendary"]
+  },
+  "cobblemon:audino": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen5"]
+  },
+  "cobblemon:aurorus": {
+    "normal": ["fossil", "gen6"]
+  },
+  "cobblemon:avalugg": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen6", "kalosian_form"]
+  },
+  "cobblemon:axew": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:azelf": {
+    "normal": ["gen4", "legendary"]
+  },
+  "cobblemon:azumarill": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:azurill": {
+    "normal": ["baby", "gen3"]
+  },
+  "cobblemon:bagon": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:baltoy": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:banette": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:barbaracle": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:barboach": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:barraskewda": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:basculegion": {
+    "f": ["gen8a"],
+    "normal": ["gen8a"]
+  },
+  "cobblemon:basculin": {
+    "bluestriped": ["gen5"],
+    "normal": ["gen5", "unovan_form"],
+    "whitestriped": ["gen8a", "hisuian_form"]
+  },
+  "cobblemon:bastiodon": {
+    "normal": ["fossil", "gen4"]
+  },
+  "cobblemon:baxcalibur": {
+    "normal": ["gen9", "powerhouse"]
+  },
+  "cobblemon:bayleef": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:beartic": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:beautifly": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:beedrill": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:beheeyem": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:beldum": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:bellibolt": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:bellossom": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:bellsprout": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:bergmite": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form"],
+    "normal": ["gen6", "kalosian_form"]
+  },
+  "cobblemon:bewear": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:bibarel": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:bidoof": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:binacle": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:bisharp": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:blacephalon": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:blastoise": {
+    "gmax": ["gen8", "gmax"],
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:blaziken": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:blipbug": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:blissey": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:blitzle": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:boldore": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:boltund": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:bombirdier": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:bonsly": {
+    "normal": ["baby", "gen4"]
+  },
+  "cobblemon:bouffalant": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:bounsweet": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:braixen": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:brambleghast": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:bramblin": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:braviary": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:breloom": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:brionne": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:bronzong": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:bronzor": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:brutebonnet": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:bruxish": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:budew": {
+    "normal": ["baby", "gen4"]
+  },
+  "cobblemon:buizel": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:bulbasaur": {
+    "normal": ["gen1", "starter"]
+  },
+  "cobblemon:buneary": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:bunnelby": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:burmy": {
+    "normal": ["gen4"],
+    "sandy": ["gen4"],
+    "trash": ["gen4"]
+  },
+  "cobblemon:butterfree": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:buzzwole": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:cacnea": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:cacturne": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:calyrex": {
+    "ice": ["gen8", "legendary", "restricted"],
+    "normal": ["gen8", "legendary", "restricted"],
+    "shadow": ["gen8", "legendary", "restricted"]
+  },
+  "cobblemon:camerupt": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:capsakid": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:carbink": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:carkol": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:carnivine": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:carracosta": {
+    "normal": ["fossil", "gen5"]
+  },
+  "cobblemon:carvanha": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:cascoon": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:castform": {
+    "normal": ["gen3"],
+    "rainy": ["gen3"],
+    "snowy": ["gen3"],
+    "sunny": ["gen3"]
+  },
+  "cobblemon:caterpie": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:celebi": {
+    "normal": ["gen2", "mythical"]
+  },
+  "cobblemon:celesteela": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:centiskorch": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:ceruledge": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:cetitan": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:cetoddle": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:chandelure": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:chansey": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:charcadet": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:charizard": {
+    "gmax": ["gen8", "gmax"],
+    "megax": ["gen6", "mega"],
+    "megay": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:charjabug": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:charmander": {
+    "normal": ["gen1", "starter"]
+  },
+  "cobblemon:charmeleon": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:chatot": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:cherrim": {
+    "normal": ["gen4"],
+    "sunshine": ["gen5"]
+  },
+  "cobblemon:cherubi": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:chesnaught": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:chespin": {
+    "normal": ["gen6", "starter"]
+  },
+  "cobblemon:chewtle": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:chienpao": {
+    "normal": ["gen9", "legendary"]
+  },
+  "cobblemon:chikorita": {
+    "normal": ["gen2", "starter"]
+  },
+  "cobblemon:chimchar": {
+    "normal": ["gen4", "starter"]
+  },
+  "cobblemon:chimecho": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:chinchou": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:chingling": {
+    "normal": ["baby", "gen4"]
+  },
+  "cobblemon:chiyu": {
+    "normal": ["gen9", "legendary"]
+  },
+  "cobblemon:cinccino": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:cinderace": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:clamperl": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:clauncher": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:clawitzer": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:claydol": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:clefable": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:clefairy": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:cleffa": {
+    "normal": ["baby", "gen2"]
+  },
+  "cobblemon:clobbopus": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:clodsire": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:cloyster": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:coalossal": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:cobalion": {
+    "normal": ["gen5", "legendary"]
+  },
+  "cobblemon:cofagrigus": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:combee": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:combusken": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:comfey": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:conkeldurr": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:copperajah": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:corphish": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:corsola": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen2", "johtonian_form"]
+  },
+  "cobblemon:corviknight": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:corvisquire": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:cosmoem": {
+    "normal": ["gen7", "legendary", "restricted"]
+  },
+  "cobblemon:cosmog": {
+    "normal": ["gen7", "legendary", "restricted"]
+  },
+  "cobblemon:cottonee": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:crabominable": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:crabrawler": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:cradily": {
+    "normal": ["fossil", "gen3"]
+  },
+  "cobblemon:cramorant": {
+    "gorging": ["gen8"],
+    "gulping": ["gen8"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:cranidos": {
+    "normal": ["fossil", "gen4"]
+  },
+  "cobblemon:crawdaunt": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:cresselia": {
+    "normal": ["gen4", "legendary"]
+  },
+  "cobblemon:croagunk": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:crobat": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:crocalor": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:croconaw": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:crustle": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:cryogonal": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:cubchoo": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:cubone": {
+    "alolabias": ["alolan_form", "customized_official", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:cufant": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:cursola": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:cutiefly": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:cyclizar": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:cyndaquil": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form", "starter"],
+    "normal": ["gen2", "johtonian_form", "starter"]
+  },
+  "cobblemon:dachsbun": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:darkrai": {
+    "normal": ["gen4", "mythical"]
+  },
+  "cobblemon:darmanitan": {
+    "galar": ["galarian_form", "gen8"],
+    "galarzen": ["galarian_form", "gen8"],
+    "normal": ["gen5", "unovan_form"],
+    "zen": ["gen5"]
+  },
+  "cobblemon:dartrix": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form"],
+    "normal": ["alolan_form", "gen7"]
+  },
+  "cobblemon:darumaka": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:decidueye": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["alolan_form", "gen7"]
+  },
+  "cobblemon:dedenne": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:deerling": {
+    "autumn": ["gen5"],
+    "normal": ["gen5"],
+    "summer": ["gen5"],
+    "winter": ["gen5"]
+  },
+  "cobblemon:deino": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:delcatty": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:delibird": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:delphox": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:deoxys": {
+    "attack": ["gen4", "mythical"],
+    "defense": ["gen4", "mythical"],
+    "normal": ["gen3", "mythical"],
+    "speed": ["gen4", "mythical"]
+  },
+  "cobblemon:dewgong": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:dewott": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:dewpider": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:dhelmise": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:dialga": {
+    "normal": ["gen4", "legendary", "restricted"],
+    "origin": ["gen8a", "legendary", "restricted"]
+  },
+  "cobblemon:diancie": {
+    "mega": ["gen6", "mega", "mythical"],
+    "normal": ["gen6", "mythical"]
+  },
+  "cobblemon:diggersby": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:diglett": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:dipplin": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:ditto": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:dodrio": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:doduo": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:dolliv": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:dondozo": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:donphan": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:dottler": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:doublade": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:dracovish": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:dracozolt": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:dragalge": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:dragapult": {
+    "normal": ["gen8", "powerhouse"]
+  },
+  "cobblemon:dragonair": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:dragonite": {
+    "normal": ["gen1", "powerhouse"]
+  },
+  "cobblemon:drakloak": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:drampa": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:drapion": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:dratini": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:drednaw": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:dreepy": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:drifblim": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:drifloon": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:drilbur": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:drizzile": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:drowzee": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:druddigon": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:dubwool": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:ducklett": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:dudunsparce": {
+    "normal": ["gen9"],
+    "threesegment": ["gen9"]
+  },
+  "cobblemon:dugtrio": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:dunsparce": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:duosion": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:duraludon": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:durant": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:dusclops": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:dusknoir": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:duskull": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:dustox": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:dwebble": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:eelektrik": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:eelektross": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:eevee": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:eiscue": {
+    "noiceface": ["gen8"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:ekans": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:eldegoss": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:electabuzz": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:electivire": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:electrike": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:electrode": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:elekid": {
+    "normal": ["baby", "gen2"]
+  },
+  "cobblemon:elgyem": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:emboar": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:emolga": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:empoleon": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:enamorus": {
+    "normal": ["gen8a", "legendary"],
+    "therian": ["gen8a", "legendary"]
+  },
+  "cobblemon:entei": {
+    "normal": ["gen2", "legendary"]
+  },
+  "cobblemon:escavalier": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:espathra": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:espeon": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:espurr": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:eternatus": {
+    "eternamax": ["gen8", "legendary", "restricted"],
+    "normal": ["gen8", "legendary", "restricted"]
+  },
+  "cobblemon:excadrill": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:exeggcute": {
+    "alolabias": ["alolan_form", "customized_official", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:exeggutor": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:exploud": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:falinks": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:farfetchd": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:farigiraf": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:fearow": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:feebas": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:fennekin": {
+    "normal": ["gen6", "starter"]
+  },
+  "cobblemon:feraligatr": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:ferroseed": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:ferrothorn": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:fezandipiti": {
+    "normal": ["gen9", "legendary"]
+  },
+  "cobblemon:fidough": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:finizen": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:finneon": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:flaaffy": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:flabebe": {
+    "blue": ["gen6"],
+    "normal": ["gen6"],
+    "orange": ["gen6"],
+    "white": ["gen6"],
+    "yellow": ["gen6"]
+  },
+  "cobblemon:flamigo": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:flapple": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:flareon": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:fletchinder": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:fletchling": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:flittle": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:floatzel": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:floette": {
+    "blue": ["gen6"],
+    "eternal": ["gen6"],
+    "normal": ["gen6"],
+    "orange": ["gen6"],
+    "white": ["gen6"],
+    "yellow": ["gen6"]
+  },
+  "cobblemon:floragato": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:florges": {
+    "blue": ["gen6"],
+    "normal": ["gen6"],
+    "orange": ["gen6"],
+    "white": ["gen6"],
+    "yellow": ["gen6"]
+  },
+  "cobblemon:fluttermane": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:flygon": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:fomantis": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:foongus": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:forretress": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:fraxure": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:frigibax": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:frillish": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:froakie": {
+    "normal": ["gen6", "starter"]
+  },
+  "cobblemon:frogadier": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:froslass": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:frosmoth": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:fuecoco": {
+    "normal": ["gen9", "starter"]
+  },
+  "cobblemon:furfrou": {
+    "cinnamon": ["gen6"],
+    "crusader": ["gen6"],
+    "dandy": ["gen6"],
+    "debutante": ["gen6"],
+    "diamond": ["gen6"],
+    "heart": ["gen6"],
+    "kabuki": ["gen6"],
+    "lareine": ["gen6"],
+    "lavender": ["gen6"],
+    "matcha": ["gen6"],
+    "matron": ["gen6"],
+    "mourner": ["gen6"],
+    "normal": ["gen6"],
+    "pharaoh": ["gen6"],
+    "rocker": ["gen6"],
+    "star": ["gen6"]
+  },
+  "cobblemon:furret": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:gabite": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:gallade": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen4"]
+  },
+  "cobblemon:galvantula": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:garbodor": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen5"]
+  },
+  "cobblemon:garchomp": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen4", "powerhouse"]
+  },
+  "cobblemon:gardevoir": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:garganacl": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:gastly": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:gastrodon": {
+    "east": ["gen4"],
+    "normal": ["gen4"]
+  },
+  "cobblemon:genesect": {
+    "burn": ["gen5", "mythical"],
+    "chill": ["gen5", "mythical"],
+    "douse": ["gen5", "mythical"],
+    "normal": ["gen5", "mythical"],
+    "shock": ["gen5", "mythical"]
+  },
+  "cobblemon:gengar": {
+    "gmax": ["gen8", "gmax"],
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:geodude": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:gholdengo": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:gible": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:gigalith": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:gimmighoul": {
+    "normal": ["gen9"],
+    "roaming": ["gen9"]
+  },
+  "cobblemon:girafarig": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:giratina": {
+    "normal": ["gen4", "legendary", "restricted"],
+    "origin": ["gen4", "legendary", "restricted"]
+  },
+  "cobblemon:glaceon": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:glalie": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:glameow": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:glastrier": {
+    "normal": ["gen8", "legendary"]
+  },
+  "cobblemon:gligar": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:glimmet": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:glimmora": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:gliscor": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:gloom": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:gogoat": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:golbat": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:goldeen": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:golduck": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:golem": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:golett": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:golisopod": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:golurk": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:goodra": {
+    "hisui": ["gen8a", "hisuian_form", "powerhouse"],
+    "normal": ["gen6", "kalosian_form", "powerhouse"]
+  },
+  "cobblemon:goomy": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form"],
+    "normal": ["gen6", "kalosian_form"]
+  },
+  "cobblemon:gorebyss": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:gossifleur": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:gothita": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:gothitelle": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:gothorita": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:gougingfire": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:gourgeist": {
+    "large": ["gen6"],
+    "normal": ["gen6"],
+    "small": ["gen6"],
+    "super": ["gen6"]
+  },
+  "cobblemon:grafaiai": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:granbull": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:grapploct": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:graveler": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:greattusk": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:greavard": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:greedent": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:greninja": {
+    "ash": ["gen7"],
+    "bond": ["gen7"],
+    "normal": ["gen6"]
+  },
+  "cobblemon:grimer": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:grimmsnarl": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:grookey": {
+    "normal": ["gen8", "starter"]
+  },
+  "cobblemon:grotle": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:groudon": {
+    "normal": ["gen3", "legendary", "restricted"],
+    "primal": ["gen6", "legendary", "primal", "restricted"]
+  },
+  "cobblemon:grovyle": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:growlithe": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:grubbin": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:grumpig": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:gulpin": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:gumshoos": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:gurdurr": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:guzzlord": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:gyarados": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:hakamoo": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:happiny": {
+    "normal": ["baby", "gen4"]
+  },
+  "cobblemon:hariyama": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:hatenna": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:hatterene": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:hattrem": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:haunter": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:hawlucha": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:haxorus": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:heatmor": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:heatran": {
+    "normal": ["gen4", "legendary"]
+  },
+  "cobblemon:heliolisk": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:helioptile": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:heracross": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen2"]
+  },
+  "cobblemon:herdier": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:hippopotas": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:hippowdon": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:hitmonchan": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:hitmonlee": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:hitmontop": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:honchkrow": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:honedge": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:hooh": {
+    "normal": ["gen2", "legendary", "restricted"]
+  },
+  "cobblemon:hoopa": {
+    "normal": ["gen6", "mythical"],
+    "unbound": ["gen6", "mythical"]
+  },
+  "cobblemon:hoothoot": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:hoppip": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:horsea": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:houndoom": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen2"]
+  },
+  "cobblemon:houndour": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:houndstone": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:huntail": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:hydrapple": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:hydreigon": {
+    "normal": ["gen5", "powerhouse"]
+  },
+  "cobblemon:hypno": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:igglybuff": {
+    "normal": ["baby", "gen2"]
+  },
+  "cobblemon:illumise": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:impidimp": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:incineroar": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:indeedee": {
+    "f": ["gen8"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:infernape": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:inkay": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:inteleon": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:ironboulder": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironbundle": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironcrown": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironhands": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironjugulis": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironleaves": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironmoth": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironthorns": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:irontreads": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ironvaliant": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:ivysaur": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:jangmoo": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:jellicent": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:jigglypuff": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:jirachi": {
+    "normal": ["gen3", "mythical"]
+  },
+  "cobblemon:jolteon": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:joltik": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:jumpluff": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:jynx": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:kabuto": {
+    "normal": ["fossil", "gen1"]
+  },
+  "cobblemon:kabutops": {
+    "normal": ["fossil", "gen1"]
+  },
+  "cobblemon:kadabra": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:kakuna": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:kangaskhan": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:karrablast": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:kartana": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:kecleon": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:keldeo": {
+    "normal": ["gen5", "mythical"],
+    "resolute": ["gen5", "mythical"]
+  },
+  "cobblemon:kilowattrel": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:kingambit": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:kingdra": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:kingler": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:kirlia": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:klang": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:klawf": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:kleavor": {
+    "normal": ["gen8a"]
+  },
+  "cobblemon:klefki": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:klink": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:klinklang": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:koffing": {
+    "galarbias": ["customized_official", "galarian_form", "gen8"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:komala": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:kommoo": {
+    "normal": ["gen7", "powerhouse"]
+  },
+  "cobblemon:koraidon": {
+    "normal": ["gen9", "legendary", "restricted"]
+  },
+  "cobblemon:krabby": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:kricketot": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:kricketune": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:krokorok": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:krookodile": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:kubfu": {
+    "normal": ["gen8", "legendary"]
+  },
+  "cobblemon:kyogre": {
+    "normal": ["gen3", "legendary", "restricted"],
+    "primal": ["gen6", "legendary", "primal", "restricted"]
+  },
+  "cobblemon:kyurem": {
+    "black": ["gen5", "legendary", "restricted"],
+    "normal": ["gen5", "legendary", "restricted"],
+    "white": ["gen5", "legendary", "restricted"]
+  },
+  "cobblemon:lairon": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:lampent": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:landorus": {
+    "normal": ["gen5", "legendary"],
+    "therian": ["gen5", "legendary"]
+  },
+  "cobblemon:lanturn": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:lapras": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:larvesta": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:larvitar": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:latias": {
+    "mega": ["gen6", "legendary", "mega"],
+    "normal": ["gen3", "legendary"]
+  },
+  "cobblemon:latios": {
+    "mega": ["gen6", "legendary", "mega"],
+    "normal": ["gen3", "legendary"]
+  },
+  "cobblemon:leafeon": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:leavanny": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:lechonk": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:ledian": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:ledyba": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:lickilicky": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:lickitung": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:liepard": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:lileep": {
+    "normal": ["fossil", "gen3"]
+  },
+  "cobblemon:lilligant": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:lillipup": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:linoone": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen3", "hoennian_form"]
+  },
+  "cobblemon:litleo": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:litten": {
+    "normal": ["gen7", "starter"]
+  },
+  "cobblemon:litwick": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:lokix": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:lombre": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:lopunny": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen4"]
+  },
+  "cobblemon:lotad": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:loudred": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:lucario": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen4"]
+  },
+  "cobblemon:ludicolo": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:lugia": {
+    "normal": ["gen2", "legendary", "restricted"]
+  },
+  "cobblemon:lumineon": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:lunala": {
+    "normal": ["gen7", "legendary", "restricted"]
+  },
+  "cobblemon:lunatone": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:lurantis": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:luvdisc": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:luxio": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:luxray": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:lycanroc": {
+    "dusk": ["gen7"],
+    "midnight": ["gen7"],
+    "normal": ["gen7"]
+  },
+  "cobblemon:mabosstiff": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:machamp": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:machoke": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:machop": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:magby": {
+    "normal": ["baby", "gen2"]
+  },
+  "cobblemon:magcargo": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:magearna": {
+    "normal": ["gen7", "mythical"],
+    "original": ["gen7", "mythical"]
+  },
+  "cobblemon:magikarp": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:magmar": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:magmortar": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:magnemite": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:magneton": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:magnezone": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:makuhita": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:malamar": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:mamoswine": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:manaphy": {
+    "normal": ["gen4", "mythical"]
+  },
+  "cobblemon:mandibuzz": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:manectric": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:mankey": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:mantine": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:mantyke": {
+    "normal": ["baby", "gen4"]
+  },
+  "cobblemon:maractus": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:mareanie": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:mareep": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:marill": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:marowak": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:marshadow": {
+    "normal": ["gen7", "mythical"]
+  },
+  "cobblemon:marshtomp": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:maschiff": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:masquerain": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:maushold": {
+    "four": ["gen9"],
+    "normal": ["gen9"]
+  },
+  "cobblemon:mawile": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:medicham": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:meditite": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:meganium": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:melmetal": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen7b", "mythical"]
+  },
+  "cobblemon:meloetta": {
+    "normal": ["gen5", "mythical"],
+    "pirouette": ["gen5", "mythical"]
+  },
+  "cobblemon:meltan": {
+    "normal": ["gen7b", "mythical"]
+  },
+  "cobblemon:meowscarada": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:meowstic": {
+    "f": ["gen6"],
+    "normal": ["gen6"]
+  },
+  "cobblemon:meowth": {
+    "alola": ["alolan_form", "gen7"],
+    "galar": ["galarian_form", "gen8"],
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:mesprit": {
+    "normal": ["gen4", "legendary"]
+  },
+  "cobblemon:metagross": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3", "powerhouse"]
+  },
+  "cobblemon:metang": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:metapod": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:mew": {
+    "normal": ["gen1", "mythical"]
+  },
+  "cobblemon:mewtwo": {
+    "megax": ["gen6", "legendary", "mega", "restricted"],
+    "megay": ["gen6", "legendary", "mega", "restricted"],
+    "normal": ["gen1", "legendary", "restricted"]
+  },
+  "cobblemon:mienfoo": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:mienshao": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:mightyena": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:milcery": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:milotic": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:miltank": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:mimejr": {
+    "galarbias": ["baby", "customized_official", "galarian_form", "gen8"],
+    "normal": ["baby", "gen4", "sinnohan_form"]
+  },
+  "cobblemon:mimikyu": {
+    "busted": ["gen7"],
+    "normal": ["gen7"]
+  },
+  "cobblemon:minccino": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:minior": {
+    "blue": ["gen7"],
+    "green": ["gen7"],
+    "indigo": ["gen7"],
+    "meteor": ["gen7"],
+    "normal": ["gen7"],
+    "orange": ["gen7"],
+    "red": ["gen7"],
+    "violet": ["gen7"],
+    "yellow": ["gen7"]
+  },
+  "cobblemon:minun": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:miraidon": {
+    "normal": ["gen9", "legendary", "restricted"]
+  },
+  "cobblemon:misdreavus": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:mismagius": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:moltres": {
+    "galar": ["galarian_form", "gen8", "legendary"],
+    "normal": ["gen1", "kantonian_form", "legendary"]
+  },
+  "cobblemon:monferno": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:morelull": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:morgrem": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:morpeko": {
+    "hangry": ["gen8"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:mothim": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:mrmime": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:mrrime": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:mudbray": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:mudkip": {
+    "normal": ["gen3", "starter"]
+  },
+  "cobblemon:mudsdale": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:muk": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:munchlax": {
+    "normal": ["baby", "gen4"]
+  },
+  "cobblemon:munkidori": {
+    "normal": ["gen9", "legendary"]
+  },
+  "cobblemon:munna": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:murkrow": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:musharna": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:nacli": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:naclstack": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:naganadel": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:natu": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:necrozma": {
+    "dawnwings": ["gen7", "legendary", "restricted"],
+    "duskmane": ["gen7", "legendary", "restricted"],
+    "normal": ["gen7", "legendary", "restricted"],
+    "ultra": ["gen7", "legendary", "restricted", "ultra_burst"]
+  },
+  "cobblemon:nickit": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:nidoking": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:nidoqueen": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:nidoranf": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:nidoranm": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:nidorina": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:nidorino": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:nihilego": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:nincada": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:ninetales": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:ninjask": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:noctowl": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:noibat": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:noivern": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:nosepass": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:numel": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:nuzleaf": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:nymble": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:obstagoon": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:octillery": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:oddish": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:ogerpon": {
+    "cornerstone": ["gen9", "legendary"],
+    "cornerstonetera": ["gen9", "legendary"],
+    "hearthflame": ["gen9", "legendary"],
+    "hearthflametera": ["gen9", "legendary"],
+    "normal": ["gen9", "legendary"],
+    "tealtera": ["gen9", "legendary"],
+    "wellspring": ["gen9", "legendary"],
+    "wellspringtera": ["gen9", "legendary"]
+  },
+  "cobblemon:oinkologne": {
+    "f": ["gen9"],
+    "normal": ["gen9"]
+  },
+  "cobblemon:okidogi": {
+    "normal": ["gen9", "legendary"]
+  },
+  "cobblemon:omanyte": {
+    "normal": ["fossil", "gen1"]
+  },
+  "cobblemon:omastar": {
+    "normal": ["fossil", "gen1"]
+  },
+  "cobblemon:onix": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:oranguru": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:orbeetle": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:oricorio": {
+    "normal": ["gen7"],
+    "pau": ["gen7"],
+    "pompom": ["gen7"],
+    "sensu": ["gen7"]
+  },
+  "cobblemon:orthworm": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:oshawott": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form", "starter"],
+    "normal": ["gen5", "starter", "unovan_form"]
+  },
+  "cobblemon:overqwil": {
+    "normal": ["gen8a"]
+  },
+  "cobblemon:pachirisu": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:palafin": {
+    "hero": ["gen9"],
+    "normal": ["gen9"]
+  },
+  "cobblemon:palkia": {
+    "normal": ["gen4", "legendary", "restricted"],
+    "origin": ["gen8a", "legendary", "restricted"]
+  },
+  "cobblemon:palossand": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:palpitoad": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:pancham": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:pangoro": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:panpour": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:pansage": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:pansear": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:paras": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:parasect": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:passimian": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:patrat": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:pawmi": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:pawmo": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:pawmot": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:pawniard": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:pecharunt": {
+    "normal": ["gen9", "mythical"]
+  },
+  "cobblemon:pelipper": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:perrserker": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:persian": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:petilil": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:phanpy": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:phantump": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:pheromosa": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:phione": {
+    "normal": ["gen4", "mythical"]
+  },
+  "cobblemon:pichu": {
+    "alolabias": ["alolan_form", "baby", "customized_official", "gen7"],
+    "normal": ["baby", "gen2", "johtonian_form"]
+  },
+  "cobblemon:pidgeot": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:pidgeotto": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:pidgey": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:pidove": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:pignite": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:pikachu": {
+    "alolabias": ["alolan_form", "customized_official", "gen7"],
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1", "kantonian_form"],
+    "partner": ["gen7"]
+  },
+  "cobblemon:pikipek": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:piloswine": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:pincurchin": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:pineco": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:pinsir": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:piplup": {
+    "normal": ["gen4", "starter"]
+  },
+  "cobblemon:plusle": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:poipole": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:politoed": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:poliwag": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:poliwhirl": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:poliwrath": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:poltchageist": {
+    "artisan": ["gen9"],
+    "normal": ["gen9"]
+  },
+  "cobblemon:polteageist": {
+    "antique": ["gen8"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:ponyta": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:poochyena": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:popplio": {
+    "normal": ["gen7", "starter"]
+  },
+  "cobblemon:porygon": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:porygon2": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:porygonz": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:primarina": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:primeape": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:prinplup": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:probopass": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:psyduck": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:pumpkaboo": {
+    "large": ["gen6"],
+    "normal": ["gen6"],
+    "small": ["gen6"],
+    "super": ["gen6"]
+  },
+  "cobblemon:pupitar": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:purrloin": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:purugly": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:pyroar": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:pyukumuku": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:quagsire": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:quaquaval": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:quaxly": {
+    "normal": ["gen9", "starter"]
+  },
+  "cobblemon:quaxwell": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:quilava": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form"],
+    "normal": ["gen2", "johtonian_form"]
+  },
+  "cobblemon:quilladin": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:qwilfish": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen2", "johtonian_form"]
+  },
+  "cobblemon:raboot": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:rabsca": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:ragingbolt": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:raichu": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:raikou": {
+    "normal": ["gen2", "legendary"]
+  },
+  "cobblemon:ralts": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:rampardos": {
+    "normal": ["fossil", "gen4"]
+  },
+  "cobblemon:rapidash": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:raticate": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:rattata": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:rayquaza": {
+    "mega": ["gen6", "legendary", "mega", "restricted"],
+    "normal": ["gen3", "legendary", "restricted"]
+  },
+  "cobblemon:regice": {
+    "normal": ["gen3", "legendary"]
+  },
+  "cobblemon:regidrago": {
+    "normal": ["gen8", "legendary"]
+  },
+  "cobblemon:regieleki": {
+    "normal": ["gen8", "legendary"]
+  },
+  "cobblemon:regigigas": {
+    "normal": ["gen4", "legendary"]
+  },
+  "cobblemon:regirock": {
+    "normal": ["gen3", "legendary"]
+  },
+  "cobblemon:registeel": {
+    "normal": ["gen3", "legendary"]
+  },
+  "cobblemon:relicanth": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:rellor": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:remoraid": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:reshiram": {
+    "normal": ["gen5", "legendary", "restricted"]
+  },
+  "cobblemon:reuniclus": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:revavroom": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:rhydon": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:rhyhorn": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:rhyperior": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:ribombee": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:rillaboom": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:riolu": {
+    "normal": ["baby", "gen4"]
+  },
+  "cobblemon:roaringmoon": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:rockruff": {
+    "dusk": ["gen7"],
+    "normal": ["gen7"]
+  },
+  "cobblemon:roggenrola": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:rolycoly": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:rookidee": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:roselia": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:roserade": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:rotom": {
+    "fan": ["gen4"],
+    "frost": ["gen4"],
+    "heat": ["gen4"],
+    "mow": ["gen4"],
+    "normal": ["gen4"],
+    "wash": ["gen4"]
+  },
+  "cobblemon:rowlet": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form", "starter"],
+    "normal": ["alolan_form", "gen7", "starter"]
+  },
+  "cobblemon:rufflet": {
+    "hisuibias": ["customized_official", "gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:runerigus": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:sableye": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:salamence": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3", "powerhouse"]
+  },
+  "cobblemon:salandit": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:salazzle": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:samurott": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:sandaconda": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:sandile": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:sandshrew": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:sandslash": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:sandygast": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:sandyshocks": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:sawk": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:sawsbuck": {
+    "autumn": ["gen5"],
+    "normal": ["gen5"],
+    "summer": ["gen5"],
+    "winter": ["gen5"]
+  },
+  "cobblemon:scatterbug": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:sceptile": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:scizor": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen2"]
+  },
+  "cobblemon:scolipede": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:scorbunny": {
+    "normal": ["gen8", "starter"]
+  },
+  "cobblemon:scovillain": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:scrafty": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:scraggy": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:screamtail": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:scyther": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:seadra": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:seaking": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:sealeo": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:seedot": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:seel": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:seismitoad": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:sentret": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:serperior": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:servine": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:seviper": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:sewaddle": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:sharpedo": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:shaymin": {
+    "normal": ["gen4", "mythical"],
+    "sky": ["gen4", "mythical"]
+  },
+  "cobblemon:shedinja": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:shelgon": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:shellder": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:shellos": {
+    "east": ["gen4"],
+    "normal": ["gen4"]
+  },
+  "cobblemon:shelmet": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:shieldon": {
+    "normal": ["fossil", "gen4"]
+  },
+  "cobblemon:shiftry": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:shiinotic": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:shinx": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:shroodle": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:shroomish": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:shuckle": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:shuppet": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:sigilyph": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:silcoon": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:silicobra": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:silvally": {
+    "bug": ["gen7", "legendary"],
+    "dark": ["gen7", "legendary"],
+    "dragon": ["gen7", "legendary"],
+    "electric": ["gen7", "legendary"],
+    "fairy": ["gen7", "legendary"],
+    "fighting": ["gen7", "legendary"],
+    "fire": ["gen7", "legendary"],
+    "flying": ["gen7", "legendary"],
+    "ghost": ["gen7", "legendary"],
+    "grass": ["gen7", "legendary"],
+    "ground": ["gen7", "legendary"],
+    "ice": ["gen7", "legendary"],
+    "normal": ["gen7", "legendary"],
+    "poison": ["gen7", "legendary"],
+    "psychic": ["gen7", "legendary"],
+    "rock": ["gen7", "legendary"],
+    "steel": ["gen7", "legendary"],
+    "water": ["gen7", "legendary"]
+  },
+  "cobblemon:simipour": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:simisage": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:simisear": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:sinistcha": {
+    "masterpiece": ["gen9"],
+    "normal": ["gen9"]
+  },
+  "cobblemon:sinistea": {
+    "antique": ["gen8"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:sirfetchd": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:sizzlipede": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:skarmory": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:skeledirge": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:skiddo": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:skiploom": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:skitty": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:skorupi": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:skrelp": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:skuntank": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:skwovet": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:slaking": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:slakoth": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:sliggoo": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen6", "kalosian_form"]
+  },
+  "cobblemon:slitherwing": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:slowbro": {
+    "galar": ["galarian_form", "gen8"],
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:slowking": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen2", "johtonian_form"]
+  },
+  "cobblemon:slowpoke": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:slugma": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:slurpuff": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:smeargle": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:smoliv": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:smoochum": {
+    "normal": ["baby", "gen2"]
+  },
+  "cobblemon:sneasel": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen2", "johtonian_form"]
+  },
+  "cobblemon:sneasler": {
+    "normal": ["gen8a"]
+  },
+  "cobblemon:snivy": {
+    "normal": ["gen5", "starter"]
+  },
+  "cobblemon:snom": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:snorlax": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:snorunt": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:snover": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:snubbull": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:sobble": {
+    "normal": ["gen8", "starter"]
+  },
+  "cobblemon:solgaleo": {
+    "normal": ["gen7", "legendary", "restricted"]
+  },
+  "cobblemon:solosis": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:solrock": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:spearow": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:spectrier": {
+    "normal": ["gen8", "legendary"]
+  },
+  "cobblemon:spewpa": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:spheal": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:spidops": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:spinarak": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:spinda": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:spiritomb": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:spoink": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:sprigatito": {
+    "normal": ["gen9", "starter"]
+  },
+  "cobblemon:spritzee": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:squawkabilly": {
+    "blue": ["gen9"],
+    "normal": ["gen9"],
+    "white": ["gen9"],
+    "yellow": ["gen9"]
+  },
+  "cobblemon:squirtle": {
+    "normal": ["gen1", "starter"]
+  },
+  "cobblemon:stakataka": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:stantler": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:staraptor": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:staravia": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:starly": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:starmie": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:staryu": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:steelix": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen2"]
+  },
+  "cobblemon:steenee": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:stonjourner": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:stoutland": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:stufful": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:stunfisk": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:stunky": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:sudowoodo": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:suicune": {
+    "normal": ["gen2", "legendary"]
+  },
+  "cobblemon:sunflora": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:sunkern": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:surskit": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:swablu": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:swadloon": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:swalot": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:swampert": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen3"]
+  },
+  "cobblemon:swanna": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:swellow": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:swinub": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:swirlix": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:swoobat": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:sylveon": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:tadbulb": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:taillow": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:talonflame": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:tandemaus": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:tangela": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:tangrowth": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:tapubulu": {
+    "normal": ["gen7", "legendary"]
+  },
+  "cobblemon:tapufini": {
+    "normal": ["gen7", "legendary"]
+  },
+  "cobblemon:tapukoko": {
+    "normal": ["gen7", "legendary"]
+  },
+  "cobblemon:tapulele": {
+    "normal": ["gen7", "legendary"]
+  },
+  "cobblemon:tarountula": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:tatsugiri": {
+    "droopy": ["gen9"],
+    "normal": ["gen9"],
+    "stretchy": ["gen9"]
+  },
+  "cobblemon:tauros": {
+    "normal": ["gen1", "kantonian_form"],
+    "paldeaaqua": ["gen9", "paldean_form"],
+    "paldeablaze": ["gen9", "paldean_form"],
+    "paldeacombat": ["gen9", "paldean_form"]
+  },
+  "cobblemon:teddiursa": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:tentacool": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:tentacruel": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:tepig": {
+    "normal": ["gen5", "starter"]
+  },
+  "cobblemon:terapagos": {
+    "normal": ["gen9", "legendary", "restricted"],
+    "stellar": ["gen9", "legendary", "restricted"],
+    "terastal": ["gen9", "legendary", "restricted"]
+  },
+  "cobblemon:terrakion": {
+    "normal": ["gen5", "legendary"]
+  },
+  "cobblemon:thievul": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:throh": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:thundurus": {
+    "normal": ["gen5", "legendary"],
+    "therian": ["gen5", "legendary"]
+  },
+  "cobblemon:thwackey": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:timburr": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:tinglu": {
+    "normal": ["gen9", "legendary"]
+  },
+  "cobblemon:tinkatink": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:tinkaton": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:tinkatuff": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:tirtouga": {
+    "normal": ["fossil", "gen5"]
+  },
+  "cobblemon:toedscool": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:toedscruel": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:togedemaru": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:togekiss": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:togepi": {
+    "normal": ["baby", "gen2"]
+  },
+  "cobblemon:togetic": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:torchic": {
+    "normal": ["gen3", "starter"]
+  },
+  "cobblemon:torkoal": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:tornadus": {
+    "normal": ["gen5", "legendary"],
+    "therian": ["gen5", "legendary"]
+  },
+  "cobblemon:torracat": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:torterra": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:totodile": {
+    "normal": ["gen2", "starter"]
+  },
+  "cobblemon:toucannon": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:toxapex": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:toxel": {
+    "normal": ["baby", "gen8"]
+  },
+  "cobblemon:toxicroak": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:toxtricity": {
+    "gmax": ["gen8", "gmax"],
+    "lowkey": ["gen8"],
+    "lowkeygmax": ["gen8", "gmax"],
+    "normal": ["gen8"]
+  },
+  "cobblemon:tranquill": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:trapinch": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:treecko": {
+    "normal": ["gen3", "starter"]
+  },
+  "cobblemon:trevenant": {
+    "normal": ["gen6"]
+  },
+  "cobblemon:tropius": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:trubbish": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:trumbeak": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:tsareena": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:turtonator": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:turtwig": {
+    "normal": ["gen4", "starter"]
+  },
+  "cobblemon:tympole": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:tynamo": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:typenull": {
+    "normal": ["gen7", "legendary"]
+  },
+  "cobblemon:typhlosion": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen2", "johtonian_form"]
+  },
+  "cobblemon:tyranitar": {
+    "mega": ["gen6", "mega"],
+    "normal": ["gen2", "powerhouse"]
+  },
+  "cobblemon:tyrantrum": {
+    "normal": ["fossil", "gen6"]
+  },
+  "cobblemon:tyrogue": {
+    "normal": ["baby", "gen2"]
+  },
+  "cobblemon:tyrunt": {
+    "normal": ["fossil", "gen6"]
+  },
+  "cobblemon:umbreon": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:unfezant": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:unown": {
+    "": ["gen3"],
+    "b": ["gen2"],
+    "c": ["gen2"],
+    "d": ["gen2"],
+    "e": ["gen2"],
+    "f": ["gen2"],
+    "g": ["gen2"],
+    "h": ["gen2"],
+    "i": ["gen2"],
+    "j": ["gen2"],
+    "k": ["gen2"],
+    "l": ["gen2"],
+    "m": ["gen2"],
+    "n": ["gen2"],
+    "normal": ["gen2"],
+    "o": ["gen2"],
+    "p": ["gen2"],
+    "q": ["gen2"],
+    "r": ["gen2"],
+    "s": ["gen2"],
+    "t": ["gen2"],
+    "u": ["gen2"],
+    "v": ["gen2"],
+    "w": ["gen2"],
+    "x": ["gen2"],
+    "y": ["gen2"],
+    "z": ["gen2"]
+  },
+  "cobblemon:ursaluna": {
+    "bloodmoon": ["gen9"],
+    "normal": ["gen8a"]
+  },
+  "cobblemon:ursaring": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:urshifu": {
+    "gmax": ["gen8", "gmax"],
+    "normal": ["gen8", "legendary"],
+    "rapidstrike": ["gen8", "legendary"],
+    "rapidstrikegmax": ["gen8", "gmax"]
+  },
+  "cobblemon:uxie": {
+    "normal": ["gen4", "legendary"]
+  },
+  "cobblemon:vanillish": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:vanillite": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:vanilluxe": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:vaporeon": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:varoom": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:veluza": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:venipede": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:venomoth": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:venonat": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:venusaur": {
+    "gmax": ["gen8", "gmax"],
+    "mega": ["gen6", "mega"],
+    "normal": ["gen1"]
+  },
+  "cobblemon:vespiquen": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:vibrava": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:victini": {
+    "normal": ["gen5", "mythical"]
+  },
+  "cobblemon:victreebel": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:vigoroth": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:vikavolt": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:vileplume": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:virizion": {
+    "normal": ["gen5", "legendary"]
+  },
+  "cobblemon:vivillon": {
+    "archipelago": ["gen6"],
+    "continental": ["gen6"],
+    "elegant": ["gen6"],
+    "fancy": ["gen6"],
+    "forsaken": ["gen6"],
+    "garden": ["gen6"],
+    "highplains": ["gen6"],
+    "icysnow": ["gen6"],
+    "inferno": ["gen6"],
+    "jungle": ["gen6"],
+    "marine": ["gen6"],
+    "meadow": ["gen6"],
+    "modern": ["gen6"],
+    "monsoon": ["gen6"],
+    "normal": ["gen6"],
+    "ocean": ["gen6"],
+    "pokeball": ["gen6"],
+    "polar": ["gen6"],
+    "river": ["gen6"],
+    "sandstorm": ["gen6"],
+    "savanna": ["gen6"],
+    "sun": ["gen6"],
+    "tundra": ["gen6"],
+    "void": ["gen6"]
+  },
+  "cobblemon:volbeat": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:volcanion": {
+    "normal": ["gen6", "mythical"]
+  },
+  "cobblemon:volcarona": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:voltorb": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:vullaby": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:vulpix": {
+    "alola": ["alolan_form", "gen7"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:wailmer": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:wailord": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:walkingwake": {
+    "normal": ["gen9", "paradox"]
+  },
+  "cobblemon:walrein": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:wartortle": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:watchog": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:wattrel": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:weavile": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:weedle": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:weepinbell": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:weezing": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen1", "kantonian_form"]
+  },
+  "cobblemon:whimsicott": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:whirlipede": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:whiscash": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:whismur": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:wigglytuff": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:wiglett": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:wimpod": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:wingull": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:wishiwashi": {
+    "normal": ["gen7"],
+    "school": ["gen7"]
+  },
+  "cobblemon:wobbuffet": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:wochien": {
+    "normal": ["gen9", "legendary"]
+  },
+  "cobblemon:woobat": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:wooloo": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:wooper": {
+    "normal": ["gen2", "johtonian_form"],
+    "paldea": ["gen9", "paldean_form"]
+  },
+  "cobblemon:wormadam": {
+    "normal": ["gen4"],
+    "sandy": ["gen4"],
+    "trash": ["gen4"]
+  },
+  "cobblemon:wugtrio": {
+    "normal": ["gen9"]
+  },
+  "cobblemon:wurmple": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:wynaut": {
+    "normal": ["baby", "gen3"]
+  },
+  "cobblemon:wyrdeer": {
+    "normal": ["gen8a"]
+  },
+  "cobblemon:xatu": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:xerneas": {
+    "active": ["gen6", "legendary", "restricted"],
+    "normal": ["gen6", "legendary", "restricted"]
+  },
+  "cobblemon:xurkitree": {
+    "normal": ["gen7", "ultra_beast"]
+  },
+  "cobblemon:yamask": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:yamper": {
+    "normal": ["gen8"]
+  },
+  "cobblemon:yanma": {
+    "normal": ["gen2"]
+  },
+  "cobblemon:yanmega": {
+    "normal": ["gen4"]
+  },
+  "cobblemon:yungoos": {
+    "normal": ["gen7"]
+  },
+  "cobblemon:yveltal": {
+    "normal": ["gen6", "legendary", "restricted"]
+  },
+  "cobblemon:zacian": {
+    "crowned": ["gen8", "legendary", "restricted"],
+    "normal": ["gen8", "legendary", "restricted"]
+  },
+  "cobblemon:zamazenta": {
+    "crowned": ["gen8", "legendary", "restricted"],
+    "normal": ["gen8", "legendary", "restricted"]
+  },
+  "cobblemon:zangoose": {
+    "normal": ["gen3"]
+  },
+  "cobblemon:zapdos": {
+    "galar": ["galarian_form", "gen8", "legendary"],
+    "normal": ["gen1", "kantonian_form", "legendary"]
+  },
+  "cobblemon:zarude": {
+    "dada": ["gen8", "mythical"],
+    "normal": ["gen8", "mythical"]
+  },
+  "cobblemon:zebstrika": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:zekrom": {
+    "normal": ["gen5", "legendary", "restricted"]
+  },
+  "cobblemon:zeraora": {
+    "normal": ["gen7", "mythical"]
+  },
+  "cobblemon:zigzagoon": {
+    "galar": ["galarian_form", "gen8"],
+    "normal": ["gen3", "hoennian_form"]
+  },
+  "cobblemon:zoroark": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:zorua": {
+    "hisui": ["gen8a", "hisuian_form"],
+    "normal": ["gen5", "unovan_form"]
+  },
+  "cobblemon:zubat": {
+    "normal": ["gen1"]
+  },
+  "cobblemon:zweilous": {
+    "normal": ["gen5"]
+  },
+  "cobblemon:zygarde": {
+    "10": ["gen7", "legendary", "restricted"],
+    "10c": ["cobblemon", "legendary", "restricted"],
+    "50c": ["cobblemon", "legendary", "restricted"],
+    "complete": ["gen7", "legendary", "restricted"],
+    "normal": ["gen6", "legendary", "restricted"]
+  }
+}
