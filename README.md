@@ -60,9 +60,3 @@ Resource pack authors: see the [short configuration guide](docs/resource-pack-au
 Servers can distribute sounds and rule JSON together through Minecraft's normal server resource-pack settings. Include rules at `assets/<namespace>/battle_music/<file>.json` in the offered pack.
 
 Players need the mod on their client and must accept the pack. Rules from enabled packs and client config are matched together using the normal priority rules. No server-side mod or music config is required.
-
-## Development and testing
-
-Use `./gradlew runClient` for a development client. Add `-Dcustommusic.debug=true` to the client's JVM arguments to log matching decisions in `logs/latest.log`.
-
-See [basic checks](docs/testing.md) and [integration notes](docs/integration.md).
