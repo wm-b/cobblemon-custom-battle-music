@@ -29,8 +29,20 @@ class BattleContextResolver(private val identities: TrainerIdentityResolver = Tr
                 ?: species?.getForm(pokemon.state.currentAspects)?.formOnlyShowdownId()?.let(::normalize)
                 ?: "normal"
             val nativeLabels = species?.getForm(pokemon.state.currentAspects)?.labels.orEmpty()
-            OpponentPokemon(speciesId.toString(), form, nativeLabels + SpeciesCategories.labels(speciesId.toString(), form))
+            OpponentPokemon(speciesId.toString(), form, PokemonTraits.categories(
+                nativeLabels + SpeciesCategories.labels(speciesId.toString(), form),
+                pokemon.properties.shiny == true || "shiny" in pokemon.state.currentAspects
+            ))
         }
-        return BattleContext(battle.battleId, kind, trainers, opponents)
+        val players = actors.filter { it.type == ActorType.PLAYER }.map {
+            PlayerIdentity(it.uuid, client.connection?.getPlayerInfo(it.uuid)?.profile?.name)
+        }
+        // Count all living active Pokemon on each side, including teammates in multi battles.
+        val lowAllyHealth = battle.side1.actors.flatMap { it.activePokemon }
+            .mapNotNull { it.battlePokemon }.any { PokemonTraits.isLowHealth(it.hpValue, it.maxHp, it.isHpFlat) }
+        val lowEnemyHealth = actors.flatMap { it.activePokemon }
+            .mapNotNull { it.battlePokemon }.any { PokemonTraits.isLowHealth(it.hpValue, it.maxHp, it.isHpFlat) }
+        return BattleContext(battle.battleId, kind, trainers, opponents, players = players,
+            lowAllyHealth = lowAllyHealth, lowEnemyHealth = lowEnemyHealth)
     }
 }

@@ -3,17 +3,38 @@
   "title": "Cobblemon Custom Battle Music API rule document",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "rules"],
+  "required": [
+    "id",
+    "rules"
+  ],
   "properties": {
-    "id": { "type": "string", "minLength": 1, "pattern": "\\S" },
-    "priority": { "$ref": "#/$defs/priority" },
-    "rules": { "type": "array", "items": { "$ref": "#/$defs/rule" } },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "priority": {
+      "$ref": "#/$defs/priority"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rule"
+      }
+    },
     "categories": {
       "type": "object",
-      "propertyNames": { "pattern": "^[A-Za-z0-9_.-]+$" },
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9_.-]+$",
+        "not": {
+          "pattern": "^[Ss][Hh][Ii][Nn][Yy]$"
+        }
+      },
       "additionalProperties": {
         "type": "array",
-        "items": { "$ref": "#/$defs/speciesSelector" }
+        "items": {
+          "$ref": "#/$defs/speciesSelector"
+        }
       }
     }
   },
@@ -27,17 +48,30 @@
       "type": "string",
       "pattern": "^[A-Za-z0-9_.-]+:[A-Za-z0-9/._-]+$"
     },
-    "soundId": { "type": "string", "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$" },
+    "soundId": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9/._-]+$"
+    },
     "speciesSelector": {
       "oneOf": [
-        { "$ref": "#/$defs/speciesId" },
+        {
+          "$ref": "#/$defs/speciesId"
+        },
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["species"],
+          "required": [
+            "species"
+          ],
           "properties": {
-            "species": { "$ref": "#/$defs/speciesId" },
-            "form": { "type": "string", "minLength": 1, "pattern": "\\S" }
+            "species": {
+              "$ref": "#/$defs/speciesId"
+            },
+            "form": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
           }
         }
       ]
@@ -45,22 +79,92 @@
     "rule": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "match", "sound"],
+      "required": [
+        "type",
+        "sound"
+      ],
       "properties": {
-        "type": { "enum": ["trainer", "trainer_name", "species", "category"] },
-        "match": { "type": "string", "minLength": 1, "pattern": "\\S" },
+        "type": {
+          "enum": [
+            "trainer",
+            "trainer_name",
+            "species",
+            "category",
+            "wild",
+            "all",
+            "player"
+          ]
+        },
+        "match": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
         "sound": {
           "type": "array",
           "minItems": 1,
-          "items": { "$ref": "#/$defs/soundId" }
+          "items": {
+            "$ref": "#/$defs/soundId"
+          }
         },
-        "priority": { "$ref": "#/$defs/priority" },
-        "form": { "type": "string", "minLength": 1, "pattern": "\\S" },
-        "scope": { "enum": ["wild", "trainer", "any"] }
+        "priority": {
+          "$ref": "#/$defs/priority"
+        },
+        "form": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "scope": {
+          "enum": [
+            "wild",
+            "trainer",
+            "player",
+            "any"
+          ]
+        },
+        "event": {
+          "enum": [
+            "battle",
+            "spawn"
+          ],
+          "default": "battle",
+          "description": "spawn plays a one-shot when a verified wild Pokemon enters client tracking."
+        },
+        "intro": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/soundId"
+          },
+          "description": "One randomly chosen, non-looping intro before the main track."
+        },
+        "low_ally_hp": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/soundId"
+          },
+          "description": "One randomly chosen loop while any living active Pokemon on your side, including teammates, has HP at or below 20%. Takes precedence over low_enemy_hp when both triggers apply."
+        },
+        "low_enemy_hp": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/soundId"
+          },
+          "description": "One randomly chosen loop while any living active opposing Pokemon has HP at or below 20%, unless an available low_ally_hp track takes precedence."
+        }
       },
       "allOf": [
         {
-          "if": { "properties": { "type": { "const": "trainer" } } },
+          "if": {
+            "properties": {
+              "type": {
+                "const": "trainer"
+              }
+            }
+          },
           "then": {
             "properties": {
               "match": {
@@ -70,29 +174,179 @@
           }
         },
         {
-          "if": { "properties": { "type": { "const": "species" } } },
-          "then": {
+          "if": {
             "properties": {
-              "match": { "$ref": "#/$defs/speciesId" }
+              "type": {
+                "const": "species"
+              }
             }
           },
-          "else": { "not": { "required": ["form"] } }
-        },
-        {
-          "if": { "properties": { "type": { "const": "category" } } },
           "then": {
             "properties": {
-              "match": { "pattern": "^[A-Za-z0-9_.-]+$" }
+              "match": {
+                "$ref": "#/$defs/speciesId"
+              }
+            }
+          },
+          "else": {
+            "not": {
+              "required": [
+                "form"
+              ]
             }
           }
         },
         {
           "if": {
-            "properties": { "type": { "enum": ["trainer", "trainer_name"] } }
+            "properties": {
+              "type": {
+                "const": "category"
+              }
+            }
           },
           "then": {
             "properties": {
-              "scope": { "const": "trainer" }
+              "match": {
+                "pattern": "^[A-Za-z0-9_.-]+$"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "trainer",
+                  "trainer_name"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "scope": {
+                "const": "trainer"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "trainer",
+                  "trainer_name",
+                  "species",
+                  "category"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "match"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "wild",
+                  "all"
+                ]
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "match"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "player"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "scope": {
+                "const": "player"
+              },
+              "match": {
+                "pattern": "^(?:[A-Za-z0-9_]{1,16}|[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12})$"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "wild"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "scope": {
+                "const": "wild"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "event"
+            ],
+            "properties": {
+              "event": {
+                "const": "spawn"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "species",
+                  "category",
+                  "wild",
+                  "all"
+                ]
+              },
+              "scope": {
+                "const": "wild"
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "intro"
+                  ]
+                },
+                {
+                  "required": [
+                    "low_ally_hp"
+                  ]
+                },
+                {
+                  "required": [
+                    "low_enemy_hp"
+                  ]
+                }
+              ]
             }
           }
         }

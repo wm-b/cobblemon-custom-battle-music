@@ -9,10 +9,10 @@ data class RuleSelection(val winner: RuleMatch?, val tied: List<RuleMatch>)
 
 /** Pure resolver. Stable source keys break ties independently of load/opponent order. */
 class RuleMatcher {
-    fun select(context: BattleContext, snapshot: RuleSnapshot): RuleSelection {
+    fun select(context: BattleContext, snapshot: RuleSnapshot, event: RuleEvent = RuleEvent.BATTLE): RuleSelection {
         if (context.spectating) return RuleSelection(null, emptyList())
         val matches = snapshot.rules.mapNotNull { rule ->
-            if (!rule.scope.includes(context.kind)) return@mapNotNull null
+            if (rule.event != event || !rule.scope.includes(context.kind)) return@mapNotNull null
             rank(rule, context, snapshot)?.let { RuleMatch(rule, it) }
         }.sortedWith(compareByDescending<RuleMatch> { it.rank.priority }
             .thenByDescending { it.rank.specificity }.thenByDescending { it.rank.prefixLength }.thenBy { it.rule.key })
@@ -39,6 +39,14 @@ class RuleMatcher {
                 pokemon.categories.any { normalize(it) == selector } ||
                     snapshot.categories[selector].orEmpty().any { matchesSpecies(it, pokemon) }
             }) 2 else return null
+            RuleType.WILD -> if (context.kind == inceris.custommusic.battle.BattleKind.WILD) 1 else return null
+            RuleType.ALL -> 0
+            RuleType.PLAYER -> if (context.kind != inceris.custommusic.battle.BattleKind.PLAYER) return null else {
+                if (selector.isEmpty()) 1
+                else if (context.players.any { it.uuid.toString() == selector }) 7
+                else if (context.players.any { it.username?.let(::normalize) == selector }) 6
+                else return null
+            }
         }
         return MatchRank(rule.priority, specificity)
     }

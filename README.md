@@ -1,6 +1,6 @@
 # Cobblemon Custom Battle Music API
 
-A client-side Fabric mod that selects Cobblemon battle music from resource pack or local JSON rules. Cobblemon handles playback and fading; unmatched rules or unavailable sounds use its normal theme. No audio is bundled.
+A client-side Fabric mod for Cobblemon battle music, intros, low-HP themes, and wild Pokemon appearance sounds, configured through resource packs. No audio is bundled.
 
 ## Install
 
@@ -9,13 +9,7 @@ Requires Minecraft **1.21.1**, Java **21**, Cobblemon **1.8.2 (Fabric)**, Fabric
 Build with `./gradlew build` (Windows: `.\gradlew.bat build`). Put `build/libs/cobblemon-custom-battle-music-api-0.1.0.jar` in the client's `mods/` folder.
 
 ## Add rules
-
-Save JSON in either location:
-
-- Client config: `config/cobblemon-custom-battle-music-api/battle_music/<file>.json`
-- Resource pack: `assets/<namespace>/battle_music/<file>.json`
-
-This example uses sounds already included in Cobblemon:
+Include a rules JSON file at `assets/mypack/battle_music/music.json` in a resource pack.
 
 ```json
 {
@@ -41,22 +35,58 @@ This example uses sounds already included in Cobblemon:
 }
 ```
 
-Press **F3+T** to reload client rules and resource packs, including during a battle. Custom sounds need an enabled resource pack defining them in `assets/<namespace>/sounds.json` with the referenced audio.
+See the [resource pack author guide](docs/resource-pack-authors.md) for audio setup, rule files, reloading, and server distribution.
 
 ## Matching basics
 
-- `trainer` matches an NPC class ID or a boundary-aware prefix: `gym` matches `gym:kanto/brock`, but not `gymnasium`. `trainer_name` matches an exact display name.
-- `species` matches a namespaced species ID, optionally with `"form": "megax"`. Species and category rules default to wild battles; set `"scope": "trainer"` or `"scope": "any"` to include other battles.
-- Built-in categories include `legendary`, `mythical`, and `ultra_beast`. Define custom membership with a document-level `"categories": {"boss": ["cobblemon:mewtwo"]}`.
-- Higher `priority` wins; a rule's priority overrides its document's. At equal priority: exact trainer ID/name, longest trainer prefix, species with form, species, then category. Equal-ranked ties use the lexicographically smallest source/document/index key.
-- `sound` must be a nonempty array of lowercase, namespaced sound IDs. One entry is chosen randomly and retained while the rule and track list stay unchanged in that battle.
+See [match strings](docs/match-strings.md), [match categories](docs/match-categories.md), and the [JSON schema](schemas/music-rules.schema.json).
 
-See the [JSON schema](schemas/music-rules.schema.json) for all fields. Invalid rules are logged and skipped.
+Equal priorities rank by UUID, exact trainer/name/username, longest trainer prefix, species with form, species, category, wild/player default, then all. Remaining ties use the smallest source/document/index key lexicographically.
 
-Resource pack authors: see the [short configuration guide](docs/resource-pack-authors.md).
+## Intro and low-HP music
+Intro leads into the main track. `low_ally_hp` and `low_enemy_hp` override music when their side is low on HP; ally music takes priority when both trigger.
 
-## Server resource packs
+```json
+{
+  "id": "battle_stages",
+  "rules": [
+    {
+      "type": "wild",
+      "sound": ["cobblemon:battle.pvw.default"],
+      "intro": ["cobblemon:battle.pvn.default"],
+      "low_ally_hp": ["cobblemon:battle.pvp.default"],
+      "low_enemy_hp": ["cobblemon:battle.pvn.default"]
+    },
+    {
+      "type": "player",
+      "match": "00000000-0000-0000-0000-000000000001",
+      "sound": ["cobblemon:battle.pvp.default"]
+    },
+    {
+      "type": "all",
+      "sound": ["cobblemon:battle.pvn.default"]
+    }
+  ]
+}
+```
 
-Servers can distribute sounds and rule JSON together through Minecraft's normal server resource-pack settings. Include rules at `assets/<namespace>/battle_music/<file>.json` in the offered pack.
+See the [author guide](docs/resource-pack-authors.md) more detail.
 
-Players need the mod on their client and must accept the pack. Rules from enabled packs and client config are matched together using the normal priority rules. No server-side mod or music config is required.
+## Wild appearance sounds
+Play a sound when a wild Pokémon appears.
+
+```json
+{
+  "id": "wild_appearances",
+  "rules": [
+    {
+      "event": "spawn",
+      "type": "category",
+      "match": "shiny",
+      "sound": ["cobblemon:battle.pvw.default"]
+    }
+  ]
+}
+```
+
+See the [author guide](docs/resource-pack-authors.md) for detailed spawn rules.

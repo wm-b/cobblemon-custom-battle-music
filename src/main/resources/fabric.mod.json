@@ -3,7 +3,7 @@
   "id": "cobblemon-custom-battle-music-api",
   "version": "${version}",
   "name": "Cobblemon Custom Battle Music API",
-  "description": "Client-side Cobblemon battle music selected by resource pack and local JSON rules.",
+  "description": "Client-side Cobblemon battle music with intros, low-HP themes, and persistent wild appearance sounds configured exclusively by resource packs.",
   "environment": "client",
   "entrypoints": {
     "client": [

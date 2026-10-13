@@ -9,14 +9,14 @@ class RandomTrackSelector(private val chooseIndex: (Int) -> Int = { Random.nextI
     private var sounds: List<String> = emptyList()
     private var track: String? = null
 
-    fun select(rule: MusicRule?): String? {
-        if (rule == null) {
+    fun select(rule: MusicRule?, candidates: List<String> = rule?.sound.orEmpty()): String? {
+        if (rule == null || candidates.isEmpty()) {
             clear()
             return null
         }
-        if (ruleKey != rule.key || sounds != rule.sound) {
+        if (ruleKey != rule.key || sounds != candidates) {
             ruleKey = rule.key
-            sounds = rule.sound.toList()
+            sounds = candidates.toList()
             track = sounds[chooseIndex(sounds.size)]
         }
         return track

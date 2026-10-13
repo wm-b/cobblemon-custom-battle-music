@@ -3,6 +3,6 @@
   "package": "inceris.custommusic.mixin",
   "refmap": "cobblemon-custom-battle-music-api-refmap.json",
   "compatibilityLevel": "JAVA_21",
-  "client": ["BattleMusicHandlerMixin", "CobblemonClientMixin"],
+  "client": ["BattleMusicHandlerMixin", "CobblemonClientMixin", "BattleMusicInstanceMixin", "SpawnPokemonPacketMixin"],
   "injectors": { "defaultRequire": 1 }
 }

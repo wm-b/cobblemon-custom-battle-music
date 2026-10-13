@@ -1,0 +1,100 @@
+{
+  "autoHealParty": true,
+  "battleConfiguration": {
+    "canChallenge": true
+  },
+  "config": [
+    {
+      "defaultValue": "5",
+      "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+      "displayName": "Cooldown",
+      "type": "NUMBER",
+      "variableName": "challenge_cooldown"
+    },
+    {
+      "defaultValue": true,
+      "description": "This NPC can be battled multiple times.",
+      "displayName": "Rechallenging",
+      "type": "BOOLEAN",
+      "variableName": "can_rechallenge"
+    },
+    {
+      "defaultValue": "Hello! I am a Cobblemon trainer. Would you like to challenge me?",
+      "description": "The text that displays on the first page of the dialogue.",
+      "displayName": "Intro Text",
+      "type": "TEXT",
+      "variableName": "intro_text"
+    },
+    {
+      "defaultValue": "Would you like to challenge me?",
+      "description": "The text that displays on the challenge option.",
+      "displayName": "Challenge Text",
+      "type": "TEXT",
+      "variableName": "challenge_text"
+    },
+    {
+      "defaultValue": "Great! Let's battle!",
+      "description": "The text that appears right before the challenge starts.",
+      "displayName": "Accept Text",
+      "type": "TEXT",
+      "variableName": "challenge_accepted_text"
+    },
+    {
+      "defaultValue": "That's too bad. Maybe next time!",
+      "description": "The text that appears when the player rejects the challenge.",
+      "displayName": "Reject Text",
+      "type": "TEXT",
+      "variableName": "challenge_rejected_text"
+    },
+    {
+      "defaultValue": "I'm sorry, but I'm not ready for another battle yet. Please come back later.",
+      "description": "The text that is displayed while the cooldown is in effect.",
+      "displayName": "Cooling Down Text",
+      "type": "TEXT",
+      "variableName": "challenge_cooldown_text"
+    }
+  ],
+  "hitbox": "player",
+  "interaction": {
+    "dialogue": "cobblemon:npc-example",
+    "type": "dialogue"
+  },
+  "names": [
+    "Prisma Falkner"
+  ],
+  "party": {
+    "type": "simple",
+    "pokemon": [
+      "pidgeotto level=10"
+    ]
+  },
+  "presets": [],
+  "skill": 1,
+  "variation": {
+    "dirt": [
+      "clean",
+      "slightly_dirty",
+      "dirty",
+      "filthy"
+    ],
+    "net": {
+      "options": [
+        {
+          "aspect": "green",
+          "weight": 10
+        },
+        {
+          "aspect": "blue",
+          "weight": 5
+        },
+        {
+          "aspect": "red",
+          "weight": 1
+        }
+      ],
+      "type": "weighted"
+    }
+  },
+  "resourceIdentifier": "cobblemon:standard",
+  "canDespawn": false
+}

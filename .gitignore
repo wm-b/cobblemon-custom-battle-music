@@ -25,5 +25,5 @@ replay_pid*.log
 .DS_Store
 Thumbs.db
 Desktop.ini
-docs
+docs/_hidden
 .vscode

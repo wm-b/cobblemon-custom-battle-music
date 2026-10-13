@@ -45,6 +45,7 @@ tasks.processResources {
 tasks.test {
     useJUnitPlatform()
     inputs.file("README.md")
+    inputs.files(fileTree("examples/prisma-tests") { include("**/*.json") })
 }
 
 tasks.jar {
