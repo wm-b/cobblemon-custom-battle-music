@@ -59,24 +59,15 @@
     "dialogue": "cobblemon:npc-example",
     "type": "dialogue"
   },
-  "names": [
-    "Prisma Default Trainer"
-  ],
+  "names": ["Prisma Default Trainer"],
   "party": {
     "type": "simple",
-    "pokemon": [
-      "rattata level=10"
-    ]
+    "pokemon": ["rattata level=10"]
   },
   "presets": [],
   "skill": 1,
   "variation": {
-    "dirt": [
-      "clean",
-      "slightly_dirty",
-      "dirty",
-      "filthy"
-    ],
+    "dirt": ["clean", "slightly_dirty", "dirty", "filthy"],
     "net": {
       "options": [
         {

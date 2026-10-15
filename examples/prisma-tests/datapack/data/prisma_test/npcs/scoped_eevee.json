@@ -59,24 +59,15 @@
     "dialogue": "cobblemon:npc-example",
     "type": "dialogue"
   },
-  "names": [
-    "Prisma Eevee Trainer"
-  ],
+  "names": ["Prisma Eevee Trainer"],
   "party": {
     "type": "simple",
-    "pokemon": [
-      "eevee level=10"
-    ]
+    "pokemon": ["eevee level=10"]
   },
   "presets": [],
   "skill": 1,
   "variation": {
-    "dirt": [
-      "clean",
-      "slightly_dirty",
-      "dirty",
-      "filthy"
-    ],
+    "dirt": ["clean", "slightly_dirty", "dirty", "filthy"],
     "net": {
       "options": [
         {

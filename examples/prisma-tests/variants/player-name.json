@@ -4,15 +4,11 @@
     {
       "type": "player",
       "match": "MusicTestPlayer",
-      "sound": [
-        "prisma_test:battle24colress"
-      ]
+      "sound": ["prisma_test:battle24colress"]
     },
     {
       "type": "player",
-      "sound": [
-        "prisma_test:battle4cynthia"
-      ]
+      "sound": ["prisma_test:battle4cynthia"]
     }
   ]
 }

@@ -3,10 +3,7 @@
   "title": "Cobblemon Custom Battle Music rule document",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "id",
-    "rules"
-  ],
+  "required": ["id", "rules"],
   "properties": {
     "id": {
       "type": "string",
@@ -60,9 +57,7 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": [
-            "species"
-          ],
+          "required": ["species"],
           "properties": {
             "species": {
               "$ref": "#/$defs/speciesId"
@@ -79,10 +74,7 @@
     "rule": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "type",
-        "sound"
-      ],
+      "required": ["type", "sound"],
       "properties": {
         "type": {
           "enum": [
@@ -116,18 +108,10 @@
           "pattern": "\\S"
         },
         "scope": {
-          "enum": [
-            "wild",
-            "trainer",
-            "player",
-            "any"
-          ]
+          "enum": ["wild", "trainer", "player", "any"]
         },
         "event": {
-          "enum": [
-            "battle",
-            "spawn"
-          ],
+          "enum": ["battle", "spawn"],
           "default": "battle",
           "description": "spawn plays a one-shot when a verified wild Pokemon enters client tracking."
         },
@@ -191,9 +175,7 @@
           },
           "else": {
             "not": {
-              "required": [
-                "form"
-              ]
+              "required": ["form"]
             }
           }
         },
@@ -217,10 +199,7 @@
           "if": {
             "properties": {
               "type": {
-                "enum": [
-                  "trainer",
-                  "trainer_name"
-                ]
+                "enum": ["trainer", "trainer_name"]
               }
             }
           },
@@ -236,37 +215,25 @@
           "if": {
             "properties": {
               "type": {
-                "enum": [
-                  "trainer",
-                  "trainer_name",
-                  "species",
-                  "category"
-                ]
+                "enum": ["trainer", "trainer_name", "species", "category"]
               }
             }
           },
           "then": {
-            "required": [
-              "match"
-            ]
+            "required": ["match"]
           }
         },
         {
           "if": {
             "properties": {
               "type": {
-                "enum": [
-                  "wild",
-                  "all"
-                ]
+                "enum": ["wild", "all"]
               }
             }
           },
           "then": {
             "not": {
-              "required": [
-                "match"
-              ]
+              "required": ["match"]
             }
           }
         },
@@ -307,9 +274,7 @@
         },
         {
           "if": {
-            "required": [
-              "event"
-            ],
+            "required": ["event"],
             "properties": {
               "event": {
                 "const": "spawn"
@@ -319,12 +284,7 @@
           "then": {
             "properties": {
               "type": {
-                "enum": [
-                  "species",
-                  "category",
-                  "wild",
-                  "all"
-                ]
+                "enum": ["species", "category", "wild", "all"]
               },
               "scope": {
                 "const": "wild"
@@ -333,19 +293,13 @@
             "not": {
               "anyOf": [
                 {
-                  "required": [
-                    "intro"
-                  ]
+                  "required": ["intro"]
                 },
                 {
-                  "required": [
-                    "low_ally_hp"
-                  ]
+                  "required": ["low_ally_hp"]
                 },
                 {
-                  "required": [
-                    "low_enemy_hp"
-                  ]
+                  "required": ["low_enemy_hp"]
                 }
               ]
             }

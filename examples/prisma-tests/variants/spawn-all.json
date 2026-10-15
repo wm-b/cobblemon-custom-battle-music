@@ -4,9 +4,7 @@
     {
       "type": "all",
       "event": "spawn",
-      "sound": [
-        "prisma_test:alert"
-      ]
+      "sound": ["prisma_test:alert"]
     }
   ]
 }

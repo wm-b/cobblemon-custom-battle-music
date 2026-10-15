@@ -6,9 +6,7 @@
   "description": "Client-side Cobblemon battle music with intros, low-HP themes, and persistent wild appearance sounds configured exclusively by resource packs.",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "inceris.custommusic.CustomBattleMusicClient"
-    ]
+    "client": ["inceris.custommusic.CustomBattleMusicClient"]
   },
   "mixins": [
     { "config": "custommusic.client.mixins.json", "environment": "client" }

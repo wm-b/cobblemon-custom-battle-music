@@ -9,9 +9,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = SpawnPokemonPacket.class, remap = false)
 public abstract class SpawnPokemonPacketMixin {
-    // The typed method and its bridge may both notify; pending records are keyed by Pokemon UUID.
-    @Inject(method = "applyData", at = @At("RETURN"), remap = false)
-    private void custommusic$verifiedAppearance(CallbackInfo callback) {
-        CustomBattleMusicClient.onPokemonSpawn((SpawnPokemonPacket) (Object) this);
-    }
+  // The typed method and its bridge may both notify; pending records are keyed by Pokemon UUID.
+  @Inject(method = "applyData", at = @At("RETURN"), remap = false)
+  private void custommusic$verifiedAppearance(CallbackInfo callback) {
+    CustomBattleMusicClient.onPokemonSpawn((SpawnPokemonPacket) (Object) this);
+  }
 }

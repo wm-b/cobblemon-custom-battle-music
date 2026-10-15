@@ -9,8 +9,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = CobblemonClient.class, remap = false)
 public abstract class CobblemonClientMixin {
-    @Inject(method = "endBattle", at = @At("HEAD"), remap = false)
-    private void custommusic$clearBattle(CallbackInfo callback) {
-        CustomBattleMusicClient.onBattleEnded();
-    }
+  @Inject(method = "endBattle", at = @At("HEAD"), remap = false)
+  private void custommusic$clearBattle(CallbackInfo callback) {
+    CustomBattleMusicClient.onBattleEnded();
+  }
 }

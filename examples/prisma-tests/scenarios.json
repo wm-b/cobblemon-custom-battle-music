@@ -4,9 +4,7 @@
     "section": "battle",
     "label": "eevee",
     "instructions": "Eevee: random Battle11Wild, Battle14Wild, or Battle22Wild. Repeat separate battles.",
-    "commands": [
-      "pokespawn eevee level=5"
-    ],
+    "commands": ["pokespawn eevee level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:eevee",
@@ -23,16 +21,12 @@
     "section": "battle",
     "label": "pikachu",
     "instructions": "Pikachu: appearance level-up alert; battle Battle13Rival.",
-    "commands": [
-      "pokespawn pikachu level=5"
-    ],
+    "commands": ["pokespawn pikachu level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:pikachu",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle13rival"
-      ]
+      "sounds": ["prisma_test:battle13rival"]
     }
   },
   {
@@ -40,16 +34,12 @@
     "section": "battle",
     "label": "mewtwo",
     "instructions": "Mewtwo: species beats the equal-priority legendary rule; Battle4Cynthia.",
-    "commands": [
-      "pokespawn mewtwo level=5"
-    ],
+    "commands": ["pokespawn mewtwo level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:mewtwo",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle4cynthia"
-      ]
+      "sounds": ["prisma_test:battle4cynthia"]
     }
   },
   {
@@ -57,9 +47,7 @@
     "section": "battle",
     "label": "articuno",
     "instructions": "Articuno: random legendary track.",
-    "commands": [
-      "pokespawn articuno level=5"
-    ],
+    "commands": ["pokespawn articuno level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:articuno",
@@ -76,16 +64,12 @@
     "section": "battle",
     "label": "mew",
     "instructions": "Mew: mythical category, Battle24Colress.",
-    "commands": [
-      "pokespawn mew level=5"
-    ],
+    "commands": ["pokespawn mew level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:mew",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle24colress"
-      ]
+      "sounds": ["prisma_test:battle24colress"]
     }
   },
   {
@@ -93,16 +77,12 @@
     "section": "battle",
     "label": "nihilego",
     "instructions": "Nihilego: Ultra Beast category, Battle26LegendaryFadeout.",
-    "commands": [
-      "pokespawn nihilego level=5"
-    ],
+    "commands": ["pokespawn nihilego level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:nihilego",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle26legendaryfadeout"
-      ]
+      "sounds": ["prisma_test:battle26legendaryfadeout"]
     }
   },
   {
@@ -110,16 +90,12 @@
     "section": "battle",
     "label": "vulpix",
     "instructions": "Vulpix: generic species rule, Battle1.",
-    "commands": [
-      "pokespawn vulpix level=5"
-    ],
+    "commands": ["pokespawn vulpix level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:vulpix",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle1"
-      ]
+      "sounds": ["prisma_test:battle1"]
     }
   },
   {
@@ -127,16 +103,12 @@
     "section": "battle",
     "label": "vulpix_alola",
     "instructions": "Alolan Vulpix: form beats species, Battle21GymFadeout; item-pickup appearance alert.",
-    "commands": [
-      "pokespawn vulpix form=alola level=5"
-    ],
+    "commands": ["pokespawn vulpix form=alola level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:vulpix",
       "form": "alola",
-      "sounds": [
-        "prisma_test:battle21gymfadeout"
-      ]
+      "sounds": ["prisma_test:battle21gymfadeout"]
     }
   },
   {
@@ -144,16 +116,12 @@
     "section": "battle",
     "label": "rattata",
     "instructions": "Rattata: wild default now applies, Battle1. Use the no-rules variant for native fallback.",
-    "commands": [
-      "pokespawn rattata level=5"
-    ],
+    "commands": ["pokespawn rattata level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:rattata",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle1"
-      ]
+      "sounds": ["prisma_test:battle1"]
     }
   },
   {
@@ -161,16 +129,12 @@
     "section": "battle",
     "label": "custom_category",
     "instructions": "Snorlax: custom boss category, Battle26LegendaryFadeout; firework appearance alert.",
-    "commands": [
-      "pokespawn snorlax level=5"
-    ],
+    "commands": ["pokespawn snorlax level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:snorlax",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle26legendaryfadeout"
-      ]
+      "sounds": ["prisma_test:battle26legendaryfadeout"]
     }
   },
   {
@@ -178,16 +142,12 @@
     "section": "battle",
     "label": "priority_override",
     "instructions": "Bulbasaur: higher-priority boss category beats its species rule, Battle26LegendaryFadeout.",
-    "commands": [
-      "pokespawn bulbasaur level=5"
-    ],
+    "commands": ["pokespawn bulbasaur level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:bulbasaur",
       "form": "normal",
-      "sounds": [
-        "prisma_test:battle26legendaryfadeout"
-      ]
+      "sounds": ["prisma_test:battle26legendaryfadeout"]
     }
   },
   {
@@ -195,16 +155,12 @@
     "section": "battle",
     "label": "shiny_rattata",
     "instructions": "Shiny Rattata: Battle24Colress in battle and a short pling on appearance.",
-    "commands": [
-      "pokespawn rattata shiny=true level=5"
-    ],
+    "commands": ["pokespawn rattata shiny=true level=5"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:rattata",
       "shiny": true,
-      "sounds": [
-        "prisma_test:battle24colress"
-      ]
+      "sounds": ["prisma_test:battle24colress"]
     }
   },
   {
@@ -212,15 +168,11 @@
     "section": "stages",
     "label": "intro",
     "instructions": "Magikarp: short toast intro then Battle11Wild. Wait for the intro to finish; unchanged F3+T must not replay it.",
-    "commands": [
-      "pokespawn magikarp level=20"
-    ],
+    "commands": ["pokespawn magikarp level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:magikarp",
-      "sounds": [
-        "prisma_test:battle11wild"
-      ]
+      "sounds": ["prisma_test:battle11wild"]
     }
   },
   {
@@ -228,15 +180,11 @@
     "section": "stages",
     "label": "low_ally_hp",
     "instructions": "Magikarp: ally side at 20% or below -> Battle4Cynthia. Heal or switch the last low ally -> main from the beginning.",
-    "commands": [
-      "pokespawn magikarp level=20"
-    ],
+    "commands": ["pokespawn magikarp level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:magikarp",
-      "sounds": [
-        "prisma_test:battle11wild"
-      ]
+      "sounds": ["prisma_test:battle11wild"]
     }
   },
   {
@@ -244,15 +192,11 @@
     "section": "stages",
     "label": "low_enemy_hp",
     "instructions": "Magikarp: opponent at 20% or below -> Battle24Colress. False Swipe can leave it at 1 HP without fainting.",
-    "commands": [
-      "pokespawn magikarp level=20"
-    ],
+    "commands": ["pokespawn magikarp level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:magikarp",
-      "sounds": [
-        "prisma_test:battle11wild"
-      ]
+      "sounds": ["prisma_test:battle11wild"]
     }
   },
   {
@@ -260,15 +204,11 @@
     "section": "stages",
     "label": "both_low_hp",
     "instructions": "Both sides low: Battle4Cynthia wins. Recover the ally side -> Battle24Colress; recover enemy -> Battle11Wild, with no new intro.",
-    "commands": [
-      "pokespawn magikarp level=20"
-    ],
+    "commands": ["pokespawn magikarp level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:magikarp",
-      "sounds": [
-        "prisma_test:battle11wild"
-      ]
+      "sounds": ["prisma_test:battle11wild"]
     }
   },
   {
@@ -276,15 +216,11 @@
     "section": "stages",
     "label": "ally_only",
     "instructions": "Caterpie configures only low_ally_hp. Low enemies do not change its Battle11Wild main track.",
-    "commands": [
-      "pokespawn caterpie level=20"
-    ],
+    "commands": ["pokespawn caterpie level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:caterpie",
-      "sounds": [
-        "prisma_test:battle11wild"
-      ]
+      "sounds": ["prisma_test:battle11wild"]
     }
   },
   {
@@ -292,15 +228,11 @@
     "section": "stages",
     "label": "enemy_only",
     "instructions": "Weedle configures only low_enemy_hp. Low allies do not change its Battle11Wild main track.",
-    "commands": [
-      "pokespawn weedle level=20"
-    ],
+    "commands": ["pokespawn weedle level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:weedle",
-      "sounds": [
-        "prisma_test:battle11wild"
-      ]
+      "sounds": ["prisma_test:battle11wild"]
     }
   },
   {
@@ -308,15 +240,11 @@
     "section": "stages",
     "label": "missing_optional",
     "instructions": "Ditto: missing intro and ally tracks are skipped. A low enemy still plays Battle24Colress, including when both sides are low.",
-    "commands": [
-      "pokespawn ditto level=20"
-    ],
+    "commands": ["pokespawn ditto level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:ditto",
-      "sounds": [
-        "prisma_test:battle11wild"
-      ]
+      "sounds": ["prisma_test:battle11wild"]
     }
   },
   {
@@ -324,15 +252,11 @@
     "section": "stages",
     "label": "missing_main",
     "instructions": "Pidgey: missing main sound restores the normal Prisma wild pool; missing appearance alert is silent.",
-    "commands": [
-      "pokespawn pidgey level=20"
-    ],
+    "commands": ["pokespawn pidgey level=20"],
     "expect": {
       "kind": "wild",
       "species": "cobblemon:pidgey",
-      "sounds": [
-        "prisma_test:missing_main"
-      ]
+      "sounds": ["prisma_test:missing_main"]
     }
   },
   {
@@ -346,9 +270,7 @@
     "section": "stages",
     "label": "give test Scyther",
     "instructions": "Added Scyther with False Swipe and Roost. Use False Swipe to bring an enemy below 20%; use Roost or battle items for ally recovery. This adds to your party and does not clear existing Pokemon.",
-    "commands": [
-      "givepokemon scyther level=30 moves=falseswipe,roost,leer"
-    ]
+    "commands": ["givepokemon scyther level=30 moves=falseswipe,roost,leer"]
   },
   {
     "id": "trainer_exact",
@@ -363,9 +285,7 @@
       "species": "cobblemon:onix",
       "trainerId": "prisma_gym:brock",
       "trainerName": "Prisma Brock",
-      "sounds": [
-        "prisma_test:battle4cynthia"
-      ]
+      "sounds": ["prisma_test:battle4cynthia"]
     }
   },
   {
@@ -381,9 +301,7 @@
       "species": "cobblemon:pidgeotto",
       "trainerId": "prisma_gym:falkner",
       "trainerName": "Prisma Falkner",
-      "sounds": [
-        "prisma_test:battle10legendary"
-      ]
+      "sounds": ["prisma_test:battle10legendary"]
     }
   },
   {
@@ -399,9 +317,7 @@
       "species": "cobblemon:pikachu",
       "trainerId": "prisma_test:rival",
       "trainerName": "Prisma Rival",
-      "sounds": [
-        "prisma_test:battle13rival"
-      ]
+      "sounds": ["prisma_test:battle13rival"]
     }
   },
   {
@@ -417,9 +333,7 @@
       "species": "cobblemon:eevee",
       "trainerId": "prisma_test:scoped_eevee",
       "trainerName": "Prisma Eevee Trainer",
-      "sounds": [
-        "prisma_test:battle22wild"
-      ]
+      "sounds": ["prisma_test:battle22wild"]
     }
   },
   {
@@ -435,9 +349,7 @@
       "species": "cobblemon:rattata",
       "trainerId": "prisma_test:default",
       "trainerName": "Prisma Default Trainer",
-      "sounds": [
-        "prisma_test:battle13rival"
-      ]
+      "sounds": ["prisma_test:battle13rival"]
     }
   },
   {
@@ -447,9 +359,7 @@
     "instructions": "Requires a second participating player. Challenge a second player with a non-Eevee lead who matches neither configured target: Battle4Cynthia.",
     "expect": {
       "kind": "player",
-      "sounds": [
-        "prisma_test:battle4cynthia"
-      ]
+      "sounds": ["prisma_test:battle4cynthia"]
     }
   },
   {
@@ -460,9 +370,7 @@
     "expect": {
       "kind": "player",
       "playerName": "MusicTestPlayer",
-      "sounds": [
-        "prisma_test:battle24colress"
-      ]
+      "sounds": ["prisma_test:battle24colress"]
     }
   },
   {
@@ -474,9 +382,7 @@
       "kind": "player",
       "playerName": "MusicTestPlayer",
       "playerUuid": "00000000-0000-0000-0000-000000000001",
-      "sounds": [
-        "prisma_test:battle21gymfadeout"
-      ]
+      "sounds": ["prisma_test:battle21gymfadeout"]
     }
   },
   {
@@ -487,9 +393,7 @@
     "expect": {
       "kind": "player",
       "species": "cobblemon:eevee",
-      "sounds": [
-        "prisma_test:battle14wild"
-      ]
+      "sounds": ["prisma_test:battle14wild"]
     }
   },
   {
@@ -503,16 +407,12 @@
     "section": "appearances",
     "label": "spawn_species",
     "instructions": "Species alert: level-up sound.",
-    "commands": [
-      "pokespawn pikachu level=5"
-    ],
+    "commands": ["pokespawn pikachu level=5"],
     "expect": {
       "event": "spawn",
       "kind": "wild",
       "species": "cobblemon:pikachu",
-      "sounds": [
-        "prisma_test:alert_species"
-      ]
+      "sounds": ["prisma_test:alert_species"]
     }
   },
   {
@@ -520,17 +420,13 @@
     "section": "appearances",
     "label": "spawn_shiny",
     "instructions": "Individual shiny alert: pling sound.",
-    "commands": [
-      "pokespawn rattata shiny=true level=5"
-    ],
+    "commands": ["pokespawn rattata shiny=true level=5"],
     "expect": {
       "event": "spawn",
       "kind": "wild",
       "species": "cobblemon:rattata",
       "shiny": true,
-      "sounds": [
-        "prisma_test:alert_shiny"
-      ]
+      "sounds": ["prisma_test:alert_shiny"]
     }
   },
   {
@@ -538,16 +434,12 @@
     "section": "appearances",
     "label": "spawn_category",
     "instructions": "Custom category alert: firework twinkle.",
-    "commands": [
-      "pokespawn snorlax level=5"
-    ],
+    "commands": ["pokespawn snorlax level=5"],
     "expect": {
       "event": "spawn",
       "kind": "wild",
       "species": "cobblemon:snorlax",
-      "sounds": [
-        "prisma_test:alert_boss"
-      ]
+      "sounds": ["prisma_test:alert_boss"]
     }
   },
   {
@@ -555,17 +447,13 @@
     "section": "appearances",
     "label": "spawn_form",
     "instructions": "Form-specific alert: item-pickup sound.",
-    "commands": [
-      "pokespawn vulpix form=alola level=5"
-    ],
+    "commands": ["pokespawn vulpix form=alola level=5"],
     "expect": {
       "event": "spawn",
       "kind": "wild",
       "species": "cobblemon:vulpix",
       "form": "alola",
-      "sounds": [
-        "prisma_test:alert_form"
-      ]
+      "sounds": ["prisma_test:alert_form"]
     }
   },
   {
@@ -573,16 +461,12 @@
     "section": "appearances",
     "label": "spawn_default",
     "instructions": "Wild default alert: experience-orb sound. Spawn matching is independent of battle music.",
-    "commands": [
-      "pokespawn rattata level=5"
-    ],
+    "commands": ["pokespawn rattata level=5"],
     "expect": {
       "event": "spawn",
       "kind": "wild",
       "species": "cobblemon:rattata",
-      "sounds": [
-        "prisma_test:alert"
-      ]
+      "sounds": ["prisma_test:alert"]
     }
   },
   {
@@ -590,16 +474,12 @@
     "section": "appearances",
     "label": "spawn_once",
     "instructions": "Spawn this UUID once, then walk away and return, unload chunks, change dimension, F3+T, reconnect, and restart. The same UUID stays silent; rerunning this helper makes a NEW UUID that may alert.",
-    "commands": [
-      "pokespawn rattata level=5"
-    ],
+    "commands": ["pokespawn rattata level=5"],
     "expect": {
       "event": "spawn",
       "kind": "wild",
       "species": "cobblemon:rattata",
-      "sounds": [
-        "prisma_test:alert"
-      ]
+      "sounds": ["prisma_test:alert"]
     }
   },
   {
@@ -607,9 +487,7 @@
     "section": "appearances",
     "label": "owned Pokemon exclusion",
     "instructions": "Added an owned shiny Rattata. Send it out: it must NOT play a wild appearance alert. NPC send-outs are also excluded.",
-    "commands": [
-      "givepokemon rattata shiny=true level=5"
-    ]
+    "commands": ["givepokemon rattata shiny=true level=5"]
   },
   {
     "id": "spawn_all",

@@ -2,15 +2,15 @@
 
 The rule's `type` determines what its `match` string means:
 
-| `type` | Example `match` | Matches |
-| --- | --- | --- |
-| `species` | `cobblemon:eevee` | An opposing Eevee, any form |
-| `category` | `legendary` | An opposing Pokémon in that category; also supports `mythical`, `ultra_beast`, and custom categories |
-| `trainer` | `cobblemon:*leader*` | An NPC class ID, prefix, or `*` wildcard pattern |
-| `trainer_name` | `Brock` | The opposing trainer's full display name |
-| `player` | `Ash` or `00000000-0000-0000-0000-000000000001` | An opposing player by account username or UUID; omit `match` for all PvP |
-| `wild` | Omit | Every wild battle |
-| `all` | Omit | Every participating battle |
+| `type`         | Example `match`                                 | Matches                                                                                              |
+| -------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `species`      | `cobblemon:eevee`                               | An opposing Eevee, any form                                                                          |
+| `category`     | `legendary`                                     | An opposing Pokémon in that category; also supports `mythical`, `ultra_beast`, and custom categories |
+| `trainer`      | `cobblemon:*leader*`                            | An NPC class ID, prefix, or `*` wildcard pattern                                                     |
+| `trainer_name` | `Brock`                                         | The opposing trainer's full display name                                                             |
+| `player`       | `Ash` or `00000000-0000-0000-0000-000000000001` | An opposing player by account username or UUID; omit `match` for all PvP                             |
+| `wild`         | Omit                                            | Every wild battle                                                                                    |
+| `all`          | Omit                                            | Every participating battle                                                                           |
 
 - Matching ignores case and surrounding whitespace.
 - Species IDs require a namespace (`cobblemon:`). Add `"form": "alola"` alongside `match` to restrict a species rule to that form.

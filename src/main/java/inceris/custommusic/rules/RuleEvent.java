@@ -1,3 +1,6 @@
 package inceris.custommusic.rules;
 
-public enum RuleEvent { BATTLE, SPAWN }
+public enum RuleEvent {
+  BATTLE,
+  SPAWN
+}

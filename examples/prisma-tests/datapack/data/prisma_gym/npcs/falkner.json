@@ -59,24 +59,15 @@
     "dialogue": "cobblemon:npc-example",
     "type": "dialogue"
   },
-  "names": [
-    "Prisma Falkner"
-  ],
+  "names": ["Prisma Falkner"],
   "party": {
     "type": "simple",
-    "pokemon": [
-      "pidgeotto level=10"
-    ]
+    "pokemon": ["pidgeotto level=10"]
   },
   "presets": [],
   "skill": 1,
   "variation": {
-    "dirt": [
-      "clean",
-      "slightly_dirty",
-      "dirty",
-      "filthy"
-    ],
+    "dirt": ["clean", "slightly_dirty", "dirty", "filthy"],
     "net": {
       "options": [
         {

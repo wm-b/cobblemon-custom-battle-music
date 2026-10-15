@@ -9,6 +9,7 @@ Requires Minecraft **1.21.1**, Java **21**, Cobblemon **1.8.2 (Fabric)**, Fabric
 Build with `./gradlew build` (Windows: `.\gradlew.bat build`). Put `build/libs/cobblemon-custom-battle-music-0.2.2.jar` in the client's `mods/` folder.
 
 ## Add rules
+
 Include a rules JSON file at `assets/mypack/battle_music/music.json` in a resource pack.
 
 ```json
@@ -44,6 +45,7 @@ See [match strings](docs/match-strings.md), [match categories](docs/match-catego
 Equal priorities rank by UUID, exact trainer/name/username, longest trainer prefix, trainer wildcard, species with form, species, category, wild/player default, then all. Trainer ID patterns support `*` for any sequence of characters, e.g. `cobblemon:*leader*`. Wildcard ties favor more literal characters. Remaining ties use the smallest source/document/index key lexicographically.
 
 ## Intro and low-HP music
+
 Intro leads into the main track. `low_ally_hp` and `low_enemy_hp` override music when their side is low on HP; ally music takes priority when both trigger.
 
 ```json
@@ -73,6 +75,7 @@ Intro leads into the main track. `low_ally_hp` and `low_enemy_hp` override music
 See the [author guide](docs/resource-pack-authors.md) more detail.
 
 ## Wild appearance sounds
+
 Play a sound when a wild Pokémon appears.
 
 ```json
@@ -90,3 +93,10 @@ Play a sound when a wild Pokémon appears.
 ```
 
 See the [author guide](docs/resource-pack-authors.md) for detailed spawn rules.
+
+## Code formatting
+
+Java sources use Spotless with google-java-format (2-space block indentation).
+Run `./gradlew spotlessApply` to format and `./gradlew spotlessCheck` to check formatting.
+On Windows, use `.\gradlew.bat spotlessApply` and `.\gradlew.bat spotlessCheck`.
+Formatting is also checked by `./gradlew check` and `./gradlew build`.
