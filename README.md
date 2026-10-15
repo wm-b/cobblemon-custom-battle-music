@@ -41,7 +41,7 @@ See the [resource pack author guide](docs/resource-pack-authors.md) for audio se
 
 See [match strings](docs/match-strings.md), [match categories](docs/match-categories.md), and the [JSON schema](schemas/music-rules.schema.json).
 
-Equal priorities rank by UUID, exact trainer/name/username, longest trainer prefix, species with form, species, category, wild/player default, then all. Remaining ties use the smallest source/document/index key lexicographically.
+Equal priorities rank by UUID, exact trainer/name/username, longest trainer prefix, trainer wildcard, species with form, species, category, wild/player default, then all. Trainer ID patterns support `*` for any sequence of characters, e.g. `cobblemon:*leader*`. Wildcard ties favor more literal characters. Remaining ties use the smallest source/document/index key lexicographically.
 
 ## Intro and low-HP music
 Intro leads into the main track. `low_ally_hp` and `low_enemy_hp` override music when their side is low on HP; ally music takes priority when both trigger.

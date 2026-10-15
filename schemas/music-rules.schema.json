@@ -168,7 +168,8 @@
           "then": {
             "properties": {
               "match": {
-                "pattern": "^[A-Za-z0-9_.-]+(?::[A-Za-z0-9_.-]+)?(?:/[A-Za-z0-9_.-]+)*$"
+                "pattern": "^[A-Za-z0-9_.*-]+(?::[A-Za-z0-9_.*-]+)?(?:/[A-Za-z0-9_.*-]+)*$",
+                "description": "NPC class ID, boundary-aware prefix, or full-ID wildcard pattern. * matches zero or more characters, including : and /."
               }
             }
           }

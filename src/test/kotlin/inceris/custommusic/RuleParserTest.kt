@@ -18,6 +18,31 @@ class RuleParserTest {
         assertEquals(listOf("test:first", "test:second", "test:third"), result.rules.single().sound)
     }
 
+    @Test fun `trainer wildcard rules parse and match an NPC class ID`() {
+        for (pattern in listOf("*leader*", " COBBLEMON:*LEADER ", "*", "gym:*/brock", "cobblemon:**leader**")) {
+            val document = parse("""{"id":"music","rules":[{"type":"trainer","match":"$pattern","sound":["test:theme"]}]}""")
+            assertTrue(document.diagnostics.isEmpty(), "$pattern: ${document.diagnostics}")
+            assertEquals(pattern.trim().lowercase(), document.rules.single().match)
+        }
+        val document = parse("""{"id":"music","rules":[{"type":"trainer","match":"cobblemon:*leader*","sound":["test:theme"]}]}""")
+        val context = inceris.custommusic.battle.BattleContext(java.util.UUID(0, 1), inceris.custommusic.battle.BattleKind.TRAINER,
+            trainers = listOf(inceris.custommusic.battle.TrainerIdentity("cobblemon:bug_leader", "Bug Leader")))
+        assertEquals(document.rules.single(), RuleMatcher().select(context, RuleSnapshot(document.rules)).winner?.rule)
+    }
+
+    @Test fun `trainer wildcard validation rejects unsupported syntax and other selector types`() {
+        for (pattern in listOf("leader?", "[leader]", "leader|boss", "gym::leader*", "gym/*/", "bug leader*")) {
+            val document = parse("""{"id":"music","rules":[{"type":"trainer","match":"$pattern","sound":["test:theme"]}]}""")
+            assertTrue(document.rules.isEmpty(), pattern)
+            assertEquals(1, document.diagnostics.size, pattern)
+        }
+        for (type in listOf("species", "category", "player")) {
+            val document = parse("""{"id":"music","rules":[{"type":"$type","match":"*leader*","sound":["test:theme"]}]}""")
+            assertTrue(document.rules.isEmpty(), type)
+            assertEquals(1, document.diagnostics.size, type)
+        }
+    }
+
     @Test fun `empty scalar missing and invalid sound arrays are rejected`() {
         for (sound in listOf("[]", "\"test:old_scalar\"", "null", "42", "{}", "[42]", "[null]",
             "[true]", "[[\"test:nested\"]]", "[\"\"]", "[\"INVALID:SOUND\"]", "[\"test:valid\",\"invalid\"]")) {

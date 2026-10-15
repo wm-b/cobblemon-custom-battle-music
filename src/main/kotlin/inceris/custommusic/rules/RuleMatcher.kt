@@ -4,7 +4,7 @@ import inceris.custommusic.battle.BattleContext
 import inceris.custommusic.battle.OpponentPokemon
 import net.minecraft.ChatFormatting
 
-data class MatchRank(val priority: Int, val specificity: Int, val prefixLength: Int = 0)
+data class MatchRank(val priority: Int, val specificity: Int, val literalLength: Int = 0)
 data class RuleMatch(val rule: MusicRule, val rank: MatchRank)
 data class RuleSelection(val winner: RuleMatch?, val tied: List<RuleMatch>)
 
@@ -16,7 +16,7 @@ class RuleMatcher {
             if (rule.event != event || !rule.scope.includes(context.kind)) return@mapNotNull null
             rank(rule, context, snapshot)?.let { RuleMatch(rule, it) }
         }.sortedWith(compareByDescending<RuleMatch> { it.rank.priority }
-            .thenByDescending { it.rank.specificity }.thenByDescending { it.rank.prefixLength }.thenBy { it.rule.key })
+            .thenByDescending { it.rank.specificity }.thenByDescending { it.rank.literalLength }.thenBy { it.rule.key })
         val winner = matches.firstOrNull()
         return RuleSelection(winner, if (winner == null) emptyList() else matches.filter { it.rank == winner.rank })
     }
@@ -27,12 +27,15 @@ class RuleMatcher {
             RuleType.TRAINER -> {
                 val ids = context.trainers.mapNotNull { it.id?.let(::normalize) }
                 when {
-                    selector in ids -> return MatchRank(rule.priority, 6)
-                    ids.any { matchesTrainerPrefix(selector, it) } -> return MatchRank(rule.priority, 5, selector.length)
+                    '*' in selector -> return if (ids.any { matchesTrainerWildcard(selector, it) }) {
+                        MatchRank(rule.priority, 5, selector.count { it != '*' })
+                    } else null
+                    selector in ids -> return MatchRank(rule.priority, 7)
+                    ids.any { matchesTrainerPrefix(selector, it) } -> return MatchRank(rule.priority, 6, selector.length)
                     else -> return null
                 }
             }
-            RuleType.TRAINER_NAME -> if (context.trainers.any { normalizeTrainerName(it.name) == selector }) 6 else return null
+            RuleType.TRAINER_NAME -> if (context.trainers.any { normalizeTrainerName(it.name) == selector }) 7 else return null
             RuleType.SPECIES -> if (context.opponents.any { matchesSpecies(SpeciesSelector(selector, rule.form), it) }) {
                 if (rule.form == null) 3 else 4
             } else return null
@@ -44,8 +47,8 @@ class RuleMatcher {
             RuleType.ALL -> 0
             RuleType.PLAYER -> if (context.kind != inceris.custommusic.battle.BattleKind.PLAYER) return null else {
                 if (selector.isEmpty()) 1
-                else if (context.players.any { it.uuid.toString() == selector }) 7
-                else if (context.players.any { it.username?.let(::normalize) == selector }) 6
+                else if (context.players.any { it.uuid.toString() == selector }) 8
+                else if (context.players.any { it.username?.let(::normalize) == selector }) 7
                 else return null
             }
         }
@@ -55,6 +58,33 @@ class RuleMatcher {
     companion object {
         private fun normalizeTrainerName(name: String): String =
             normalize(ChatFormatting.stripFormatting(name).orEmpty())
+
+        /** Full-ID glob: only '*' is special, and it can cross namespace/path separators. */
+        private fun matchesTrainerWildcard(pattern: String, identity: String): Boolean {
+            var patternIndex = 0
+            var identityIndex = 0
+            var lastStar = -1
+            var retryIndex = 0
+            while (identityIndex < identity.length) {
+                when {
+                    patternIndex < pattern.length && pattern[patternIndex] == '*' -> {
+                        lastStar = patternIndex++
+                        retryIndex = identityIndex
+                    }
+                    patternIndex < pattern.length && pattern[patternIndex] == identity[identityIndex] -> {
+                        patternIndex++
+                        identityIndex++
+                    }
+                    lastStar >= 0 -> {
+                        patternIndex = lastStar + 1
+                        identityIndex = ++retryIndex
+                    }
+                    else -> return false
+                }
+            }
+            while (patternIndex < pattern.length && pattern[patternIndex] == '*') patternIndex++
+            return patternIndex == pattern.length
+        }
 
         fun matchesTrainerPrefix(selector: String, identity: String): Boolean {
             val prefix = normalize(selector)

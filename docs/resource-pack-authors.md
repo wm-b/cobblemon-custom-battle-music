@@ -57,7 +57,7 @@ All sound arrays use lowercase, namespaced sound event IDs. Omit optional arrays
 | --- | --- |
 | `species` | Species ID, e.g. `cobblemon:eevee` |
 | `category` | `legendary`, `mythical`, `ultra_beast`, or individual `shiny` status |
-| `trainer` | NPC class ID or prefix, e.g. `gym:kanto/brock` or `gym` |
+| `trainer` | NPC class ID, prefix, or wildcard, e.g. `gym:kanto/brock`, `gym`, or `cobblemon:*leader*` |
 | `trainer_name` | Exact trainer display name |
 | `player` | Optional opponent UUID or exact account username; omit for all PvP |
 | `wild` | Omit `match`; every wild battle |
@@ -76,6 +76,17 @@ Ally music takes priority when both sides trigger and both tracks are available.
 When neither available low-HP stage applies, the same main track restarts without replaying the intro. Define each event with a single audio file, and use short intro clips.
 
 Appearance rules set `"event": "spawn"` and use species/category/wild/all types with wild scope and play `sound` once.
+
+Add this object to `rules` to play a one-shot when a shiny wild Pokémon first appears to the client:
+
+```json
+{
+  "event": "spawn",
+  "type": "category",
+  "match": "shiny",
+  "sound": ["pack:battle.track1"]
+}
+```
 
 Higher `priority` wins; it defaults to 0. A rule's priority overrides the document's. At equal priority, more specific matches win. Optional document-level `categories` define custom groups, e.g. `"categories": {"boss": ["cobblemon:mewtwo"]}`.
 

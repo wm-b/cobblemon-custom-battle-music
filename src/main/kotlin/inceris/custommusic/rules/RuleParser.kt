@@ -141,7 +141,7 @@ class RuleParser {
     }
     companion object {
         val RESOURCE_ID = Regex("[a-z0-9_.-]+:[a-z0-9/._-]+")
-        private val TRAINER_ID = Regex("[a-z0-9_.-]+(?::[a-z0-9_.-]+)?(?:/[a-z0-9_.-]+)*")
+        private val TRAINER_ID = Regex("[a-z0-9_.*-]+(?::[a-z0-9_.*-]+)?(?:/[a-z0-9_.*-]+)*")
         private val LABEL = Regex("[a-z0-9_.-]+")
         private val USERNAME = Regex("[a-z0-9_]{1,16}")
         private val UUID_PATTERN = Regex("[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}")

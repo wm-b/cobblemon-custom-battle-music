@@ -6,7 +6,7 @@ The rule's `type` determines what its `match` string means:
 | --- | --- | --- |
 | `species` | `cobblemon:eevee` | An opposing Eevee, any form |
 | `category` | `legendary` | An opposing Pokémon in that category; also supports `mythical`, `ultra_beast`, and custom categories |
-| `trainer` | `gym:kanto/brock` | An NPC class ID, exactly or as a prefix |
+| `trainer` | `cobblemon:*leader*` | An NPC class ID, prefix, or `*` wildcard pattern |
 | `trainer_name` | `Brock` | The opposing trainer's full display name |
 | `player` | `Ash` or `00000000-0000-0000-0000-000000000001` | An opposing player by account username or UUID; omit `match` for all PvP |
 | `wild` | Omit | Every wild battle |
@@ -15,6 +15,7 @@ The rule's `type` determines what its `match` string means:
 - Matching ignores case and surrounding whitespace.
 - Species IDs require a namespace (`cobblemon:`). Add `"form": "alola"` alongside `match` to restrict a species rule to that form.
 - Trainer prefixes stop at `:` or `/`: `gym` matches `gym:kanto/brock`, but not `gymnasium`. Use the class ID from your NPC configuration; the example ID above is illustrative.
+- Trainer ID wildcards: `*` matches zero or more characters, including `:` and `/`. `*leader*` matches any ID containing `leader`; `cobblemon:*leader` matches IDs in that namespace ending in `leader`, such as `cobblemon:bug_leader`. Patterns match the whole ID; `?` and regular expressions are unsupported. At equal priority, exact IDs/names beat prefixes, then wildcards; wildcard patterns with more literal characters win.
 - Trainer names must match the whole plain-text name. Minecraft color/style codes (`§6`, `§l`, `§r`, etc.) are stripped from both the trainer name and rule before matching.
 - Custom category names come from the document's `categories` object, e.g. `"categories": {"boss": ["cobblemon:mewtwo"]}` allows `"match": "boss"`.
 

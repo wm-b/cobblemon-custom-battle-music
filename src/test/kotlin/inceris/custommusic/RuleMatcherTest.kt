@@ -36,6 +36,58 @@ class RuleMatcherTest {
         assertTrue(RuleMatcher.matchesTrainerPrefix("gym:kanto/brock", "gym:kanto/brock"))
     }
 
+    @Test fun `trainer wildcards match full IDs with zero or more characters`() {
+        val cases = listOf(
+            Triple("*leader*", "cobblemon:bug_leader", true),
+            Triple(" COBBLEMON:*LEADER* ", "Cobblemon:bug_leader_elite", true),
+            Triple("cobblemon:*leader", "cobblemon:leader", true),
+            Triple("cobblemon:*leader", "cobblemon:bug_leader", true),
+            Triple("cobblemon:*leader", "cobblemon:bug_leader_elite", false),
+            Triple("cobblemon:*leader", "addon:bug_leader", false),
+            Triple("*leader*", "cobblemon:bug_trainer", false),
+            Triple("gym:*", "gym:kanto/brock", true),
+            Triple("*", "gym:kanto/brock", true),
+            Triple("cobblemon:**bug*leader**", "cobblemon:bug_leader", true),
+            Triple("cobblemon:*bug*leader", "cobblemon:bug_bug_leader", true),
+            Triple("cobblemon:*bug.leader", "cobblemon:bug_leader", false),
+            Triple("cobblemon:*bug.leader", "cobblemon:bug.leader", true),
+            Triple("cobblemon:bug_leader*", "cobblemon:bug_leader/veteran", true)
+        )
+        cases.forEach { (pattern, identity, matches) ->
+            val rule = rule(RuleType.TRAINER, pattern)
+            assertEquals(if (matches) rule else null, winner(trainer(identity), rule), "$pattern against $identity")
+        }
+        assertNull(winner(trainer(null), rule(RuleType.TRAINER, "*")))
+    }
+
+    @Test fun `trainer wildcard ranking respects exact prefix literal length and priority`() {
+        val context = trainer("cobblemon:bug_leader")
+        val broad = rule(RuleType.TRAINER, "*")
+        val wildcard = rule(RuleType.TRAINER, "*leader*")
+        val specific = rule(RuleType.TRAINER, "cobblemon:*leader*")
+        val prefix = rule(RuleType.TRAINER, "cobblemon")
+        val exact = rule(RuleType.TRAINER, "cobblemon:bug_leader")
+        assertEquals(exact, winner(context, specific, prefix, exact))
+        assertEquals(prefix, winner(context, specific, prefix))
+        assertEquals(specific, winner(context, broad, wildcard, specific))
+        assertEquals(wildcard, winner(context, broad, wildcard))
+        val higherPriority = broad.copy(priority = 1)
+        assertEquals(higherPriority, winner(context, exact, higherPriority))
+        assertEquals(broad, winner(context, broad, rule(RuleType.SPECIES, "cobblemon:mewtwo", scope = RuleScope.ANY)))
+        val name = rule(RuleType.TRAINER_NAME, "Brock")
+        assertEquals(name, winner(context, specific, name))
+    }
+
+    @Test fun `equivalent wildcard ranks use stable keys independent of input order`() {
+        val context = trainer("cobblemon:bug_leader")
+        val first = rule(RuleType.TRAINER, "*leader", source = "a")
+        val second = rule(RuleType.TRAINER, "*leader*", source = "b")
+        val selection = matcher.select(context, RuleSnapshot(listOf(first, second)))
+        assertEquals(first, selection.winner?.rule)
+        assertEquals(2, selection.tied.size)
+        assertEquals(selection, matcher.select(context, RuleSnapshot(listOf(second, first))))
+    }
+
     @Test fun `higher explicit priority overrides exact identity`() {
         val broad = rule(RuleType.TRAINER, "gym", priority = 101)
         assertEquals(broad, winner(trainer(), rule(RuleType.TRAINER, "gym:kanto/brock", priority = 100), broad))
