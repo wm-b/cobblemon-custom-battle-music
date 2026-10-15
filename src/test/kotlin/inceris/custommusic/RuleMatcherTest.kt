@@ -56,6 +56,26 @@ class RuleMatcherTest {
         assertNull(winner(trainer(null, "Brock Jr"), name))
     }
 
+    @Test fun `trainer names ignore legacy colors styles and resets before normalization`() {
+        val name = rule(RuleType.TRAINER_NAME, "Brock")
+        for (code in "0123456789abcdefklmnorABCDEFKLMNOR") {
+            assertEquals(name, winner(trainer(null, "\u00a7${code}  BR\u00a7rOCK  \u00a7r"), name), "Formatting code $code")
+        }
+        assertEquals(name, winner(trainer(null, "\u00a76\u00a7lBrock\u00a7r"), name))
+        assertNull(winner(trainer(null, "\u00a76Brock\u00a7r Jr"), name))
+    }
+
+    @Test fun `formatted trainer name selectors match plain names`() {
+        val name = rule(RuleType.TRAINER_NAME, "\u00a7a\u00a7l Brock \u00a7r")
+        assertEquals(name, winner(trainer(null, "BROCK"), name))
+    }
+
+    @Test fun `trainer names preserve punctuation unicode and literal section signs`() {
+        val name = rule(RuleType.TRAINER_NAME, "L\u00e9a & Co. \u00a7!")
+        assertEquals(name, winner(trainer(null, "\u00a7dL\u00e9a & Co. \u00a7!\u00a7r"), name))
+        assertNull(winner(trainer(null, "Lea & Co. !"), name))
+    }
+
     @Test fun `exact name and exact id share a deterministic rank`() {
         val name = rule(RuleType.TRAINER_NAME, "brock", source = "b")
         val exact = rule(RuleType.TRAINER, "gym:kanto/brock", source = "a")

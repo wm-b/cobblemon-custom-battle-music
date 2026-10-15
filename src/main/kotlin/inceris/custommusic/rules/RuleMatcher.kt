@@ -2,6 +2,7 @@ package inceris.custommusic.rules
 
 import inceris.custommusic.battle.BattleContext
 import inceris.custommusic.battle.OpponentPokemon
+import net.minecraft.ChatFormatting
 
 data class MatchRank(val priority: Int, val specificity: Int, val prefixLength: Int = 0)
 data class RuleMatch(val rule: MusicRule, val rank: MatchRank)
@@ -21,7 +22,7 @@ class RuleMatcher {
     }
 
     private fun rank(rule: MusicRule, context: BattleContext, snapshot: RuleSnapshot): MatchRank? {
-        val selector = normalize(rule.match)
+        val selector = if (rule.type == RuleType.TRAINER_NAME) normalizeTrainerName(rule.match) else normalize(rule.match)
         val specificity = when (rule.type) {
             RuleType.TRAINER -> {
                 val ids = context.trainers.mapNotNull { it.id?.let(::normalize) }
@@ -31,7 +32,7 @@ class RuleMatcher {
                     else -> return null
                 }
             }
-            RuleType.TRAINER_NAME -> if (context.trainers.any { normalize(it.name) == selector }) 6 else return null
+            RuleType.TRAINER_NAME -> if (context.trainers.any { normalizeTrainerName(it.name) == selector }) 6 else return null
             RuleType.SPECIES -> if (context.opponents.any { matchesSpecies(SpeciesSelector(selector, rule.form), it) }) {
                 if (rule.form == null) 3 else 4
             } else return null
@@ -52,6 +53,9 @@ class RuleMatcher {
     }
 
     companion object {
+        private fun normalizeTrainerName(name: String): String =
+            normalize(ChatFormatting.stripFormatting(name).orEmpty())
+
         fun matchesTrainerPrefix(selector: String, identity: String): Boolean {
             val prefix = normalize(selector)
             val id = normalize(identity)

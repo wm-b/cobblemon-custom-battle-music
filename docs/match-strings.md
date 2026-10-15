@@ -15,7 +15,7 @@ The rule's `type` determines what its `match` string means:
 - Matching ignores case and surrounding whitespace.
 - Species IDs require a namespace (`cobblemon:`). Add `"form": "alola"` alongside `match` to restrict a species rule to that form.
 - Trainer prefixes stop at `:` or `/`: `gym` matches `gym:kanto/brock`, but not `gymnasium`. Use the class ID from your NPC configuration; the example ID above is illustrative.
-- Trainer names must match the whole name. Wildcards and regular expressions are unsupported.
+- Trainer names must match the whole plain-text name. Minecraft color/style codes (`§6`, `§l`, `§r`, etc.) are stripped from both the trainer name and rule before matching.
 - Custom category names come from the document's `categories` object, e.g. `"categories": {"boss": ["cobblemon:mewtwo"]}` allows `"match": "boss"`.
 
 Species/category rules default to wild battles; use `"scope": "trainer"`, `"scope": "player"`, or `"scope": "any"` for other battles. Trainer ID/name rules apply only to trainer battles. Player rules require player scope, wild rules require wild scope, and all rules default to any scope. Player names match profile usernames, not decorated display names; UUIDs work even when the profile is unavailable.
