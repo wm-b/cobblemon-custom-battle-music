@@ -62,7 +62,8 @@ function Write-Text([string]$target, [string]$value) {
 
 $artifacts = Join-Path $repository 'build\prisma-tests'
 $guide = Join-Path $repository 'examples\prisma-tests\README.md'
-$modName = 'cobblemon-custom-battle-music-api-0.1.0.jar'
+$buildProperties = Get-Content -LiteralPath (Join-Path $repository 'gradle.properties') -Raw | ConvertFrom-StringData
+$modName = '{0}-{1}.jar' -f $buildProperties.archives_base_name, $buildProperties.mod_version
 $mod = Join-Path $repository ('build\libs\' + $modName)
 $copies = @(
     @((Join-Path $artifacts 'prisma-battle-music-test-commands.zip'), (Join-Path $ProfileRoot 'datapacks\prisma-battle-music-test-commands.zip')),
@@ -104,7 +105,7 @@ $sourceGuide = ($guide -replace '\\', '/')
 $profileGuide = @"
 # Prisma music tests in this Modrinth profile
 
-The updated client API JAR is in mods/. The companion resource pack is resourcepacks/prisma-battle-music-tests.zip, and the command datapack is datapacks/prisma-battle-music-test-commands.zip.
+The updated client mod JAR is in mods/. The companion resource pack is resourcepacks/prisma-battle-music-tests.zip, and the command datapack is datapacks/prisma-battle-music-test-commands.zip.
 
 ## Resource packs
 
@@ -122,7 +123,7 @@ See the [complete scenario guide](<$sourceGuide>) for expected tracks, low-HP tr
 "@
 Write-Text (Join-Path $ProfileRoot 'PRISMA_TEST_SCENARIOS.md') ($profileGuide + "`r`n")
 if ($ProfileOnly) {
-    Write-Host 'Installed and hash-verified the profile command datapack, companion resource pack, and matching API JAR.'
+    Write-Host 'Installed and hash-verified the profile command datapack, companion resource pack, and matching mod JAR.'
     Write-Host "Setup instructions: $(Join-Path $ProfileRoot 'PRISMA_TEST_SCENARIOS.md')"
     Write-Host "Backup location (created only for replaced files): $backupRoot"
     return
@@ -140,7 +141,7 @@ $readme = [IO.File]::ReadAllText($readmePath)
 $replacement = @'
 ## Music configuration
 
-Music rules come exclusively from accepted/enabled resource packs. The latest API mod is installed in the Silvermons Modpack (1) client and copied to client-test. Its client-only replacement is also in the backend mods folder, where Fabric skips it; the older server-companion implementation has been replaced. Local server/client music JSON and /battle-music reload are obsolete.
+Music rules come exclusively from accepted/enabled resource packs. The latest music mod is installed in the Silvermons Modpack (1) client and copied to client-test. Its client-only replacement is also in the backend mods folder, where Fabric skips it; the older server-companion implementation has been replaced. Local server/client music JSON and /battle-music reload are obsolete.
 
 The self-contained resource-pack/cobblemon-prisma-server.zip contains the original 28 Prisma OGG tracks, 18 sound aliases, and 33 example rules. The existing HTTP URL and required-pack setting remain in server.properties; its SHA-1 has been updated. The original supplied Prisma ZIP is unchanged.
 
@@ -157,6 +158,6 @@ $pattern = '(?s)## Music configuration\r?\n.*?(?=\r?\n## Velocity compatibility|
 if ($readme -notmatch $pattern) { throw 'Could not locate the old music setup instructions' }
 $readme = [regex]::Replace($readme, $pattern, [System.Text.RegularExpressions.MatchEvaluator]{ param($match) $replacement + "`r`n" })
 Write-Text $readmePath $readme
-Write-Host 'Installed updated datapack, resource packs, guides, and matching API JAR; verified copied file hashes.'
+Write-Host 'Installed updated datapack, resource packs, guides, and matching mod JAR; verified copied file hashes.'
 Write-Host "Backup: $backupRoot"
 Write-Host 'Restart the cobblemon backend and Minecraft client, reconnect/accept the updated server pack, then run /function prisma_test:help.'

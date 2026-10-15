@@ -1,0 +1,56 @@
+plugins {
+    id 'fabric-loom' version '1.10.5'
+}
+
+version = project.mod_version
+group = project.maven_group
+base { archivesName = project.archives_base_name }
+
+repositories {
+    mavenCentral()
+    exclusiveContent {
+        forRepository { maven { url = 'https://api.modrinth.com/maven' } }
+        filter { includeGroup 'maven.modrinth' }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    modImplementation "maven.modrinth:cobblemon:${project.cobblemon_artifact_version}"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testImplementation 'org.ow2.asm:asm-tree:9.7.1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    withSourcesJar()
+}
+tasks.withType(JavaCompile).configureEach { options.release = 21 }
+
+processResources {
+    def metadata = [version: project.version, cobblemon_version: project.cobblemon_version]
+    inputs.properties metadata
+    filesMatching('fabric.mod.json') { expand metadata }
+}
+
+test {
+    useJUnitPlatform()
+    inputs.file 'README.md'
+    inputs.files fileTree('examples/prisma-tests') { include '**/*.json' }
+}
+
+jar {
+    from 'THIRD_PARTY_NOTICES.md'
+    from('LICENSES') { into 'LICENSES' }
+}
+
+wrapper {
+    gradleVersion = '8.12'
+    distributionType = Wrapper.DistributionType.BIN
+    distributionSha256Sum = '7a00d51fb93147819aab76024feece20b6b84e420694101f276be952e08bef03'
+}

@@ -645,6 +645,6 @@
     "id": "help_setup",
     "section": "validation",
     "label": "setup and diagnostics",
-    "instructions": "Enable the updated client mod and accept the server resource pack. /reload refreshes this datapack; F3+T refreshes client resources. Enable DEBUG for cobblemon-custom-battle-music-api to see winning rules/stages. There is no server music config or battle-music reload command."
+    "instructions": "Enable the updated client mod and accept the server resource pack. /reload refreshes this datapack; F3+T refreshes client resources. Enable DEBUG for cobblemon-custom-battle-music to see winning rules/stages. There is no server music config or battle-music reload command."
   }
 ]

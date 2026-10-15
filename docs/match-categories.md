@@ -1,6 +1,6 @@
 # Match categories
 
-All **36** distinct category names found across every species and form in [species_categories.json](../src/main/resources/assets/cobblemoncustombattlemusicapi/species_categories.json), listed alphabetically. Use the exact name as the `match` value in a `category` rule.
+All **36** distinct category names found across every species and form in [species_categories.json](../src/main/resources/assets/cobblemoncustombattlemusic/species_categories.json), listed alphabetically. Use the exact name as the `match` value in a `category` rule.
 
 - `alolan_form`
 - `baby`

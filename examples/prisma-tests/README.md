@@ -1,6 +1,6 @@
 # Prisma battle music tests
 
-For Minecraft 1.21.1 and Cobblemon 1.8.2. The command datapack supplies a clickable test menu and five sample trainers. The companion resource pack supplies 33 rules and single-track Prisma aliases. Rules are loaded only from enabled client resource packs; install the music API on clients.
+For Minecraft 1.21.1 and Cobblemon 1.8.2. The command datapack supplies a clickable test menu and five sample trainers. The companion resource pack supplies 33 rules and single-track Prisma aliases. Rules are loaded only from enabled client resource packs; install the music mod on clients.
 
 ## Install and rebuild
 
@@ -24,11 +24,11 @@ To install into the existing Modrinth test profile after rebuilding:
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install_prisma_test_packs.ps1 -ProfileOnly
 ```
 
-This updates the profile's companion resource pack, stages the command ZIP in its `datapacks/` folder, verifies the API JAR, and writes `PRISMA_TEST_SCENARIOS.md`. Enable the original Prisma pack and the companion above it in Minecraft's Resource Packs menu. The top-level `datapacks/` folder is a staging location: add its ZIP through the Data Packs menu when creating a world, or copy it into an existing world's `datapacks/` folder and reopen that world. The default installer also updates the named test network.
+This updates the profile's companion resource pack, stages the command ZIP in its `datapacks/` folder, verifies the mod JAR, and writes `PRISMA_TEST_SCENARIOS.md`. Enable the original Prisma pack and the companion above it in Minecraft's Resource Packs menu. The top-level `datapacks/` folder is a staging location: add its ZIP through the Data Packs menu when creating a world, or copy it into an existing world's `datapacks/` folder and reopen that world. The default installer also updates the named test network.
 
 Restart the backend once after installing the new NPC definitions: Cobblemon loads its data registries only at startup. Run `/reload` for later command-only updates, then `/function prisma_test:help` as an operator **in game**. Commands run at the invoking player's location. Finish or flee each battle before spawning another opponent. Use your own party; `/function prisma_test:prepare_false_swipe` adds a Scyther with False Swipe and Roost without clearing existing Pokemon. `/healpokemon` is useful between battles.
 
-The editable [rule document](resourcepack/assets/prisma_test/battle_music/music.json), [sound aliases](resourcepack/assets/prisma_test/sounds.json), [scenario manifest](scenarios.json), and [NPC definitions](datapack/data/) are the source of the ZIPs. Rebuild after editing them. F3+T reloads enabled client packs, including during battle; it does not refresh the server's hosted ZIP from disk. Enable DEBUG on the `cobblemon-custom-battle-music-api` logger to inspect selected rule sources, sound events, and stages.
+The editable [rule document](resourcepack/assets/prisma_test/battle_music/music.json), [sound aliases](resourcepack/assets/prisma_test/sounds.json), [scenario manifest](scenarios.json), and [NPC definitions](datapack/data/) are the source of the ZIPs. Rebuild after editing them. F3+T reloads enabled client packs, including during battle; it does not refresh the server's hosted ZIP from disk. Enable DEBUG on the `cobblemon-custom-battle-music` logger to inspect selected rule sources, sound events, and stages.
 
 ## Battle selectors
 
@@ -104,7 +104,7 @@ These one-shots trigger on client tracking, before battling. Music rules and app
 | `spawn_once` | Experience-orb pickup, once | Same UUID stays silent across tracking loss, unloads, dimensions, F3+T, reconnects, restarts, and rule changes |
 | `owned_exclusion` | Silence on send-out | Adds an owned shiny Rattata; NPC send-outs must also stay silent |
 
-Natural spawns and existing wild Pokemon encountered while travelling also qualify; on-screen visibility is not required. Rerunning a spawn helper creates a **new UUID** and may alert again. To test persistence, spawn once and re-encounter that same Pokemon. Histories are per listener account and server address/local world path. Keep `.cobblemon-custom-battle-music-api/appearance_history/`; do not erase real histories to reset tests. A different address/world path or listener has separate history. Playback is requested at most once; muted audio or disconnecting during saving can consume a record without an audible alert.
+Natural spawns and existing wild Pokemon encountered while travelling also qualify; on-screen visibility is not required. Rerunning a spawn helper creates a **new UUID** and may alert again. To test persistence, spawn once and re-encounter that same Pokemon. Histories are per listener account and server address/local world path. Keep `.cobblemon-custom-battle-music/appearance_history/`; do not erase real histories to reset tests. A different address/world path or listener has separate history. Playback is requested at most once; muted audio or disconnecting during saving can consume a record without an audible alert.
 
 `history_failure` prints an additional checklist for unavailable audio and unwritable/corrupt history in a disposable client copy. Failed saves must produce no alert. Upgrade histories should migrate; conflicting old/new folders must suppress appearance playback.
 

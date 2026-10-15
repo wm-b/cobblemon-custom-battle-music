@@ -1,12 +1,12 @@
-# Cobblemon Custom Battle Music API
+# Cobblemon Custom Battle Music
 
 A client-side Fabric mod for Cobblemon battle music, intros, low-HP themes, and wild Pokemon appearance sounds, configured through resource packs. No audio is bundled.
 
 ## Install
 
-Requires Minecraft **1.21.1**, Java **21**, Cobblemon **1.8.2 (Fabric)**, Fabric Loader **0.17.2+**, Fabric API **0.116.6+1.21.1+**, and Fabric Language Kotlin **1.13.6+kotlin.2.2.20+** (also supplied by Cobblemon).
+Requires Minecraft **1.21.1**, Java **21**, Cobblemon **1.8.2 (Fabric)**, Fabric Loader **0.17.2+**, and Fabric API **0.116.6+1.21.1+**.
 
-Build with `./gradlew build` (Windows: `.\gradlew.bat build`). Put `build/libs/cobblemon-custom-battle-music-api-0.1.0.jar` in the client's `mods/` folder.
+Build with `./gradlew build` (Windows: `.\gradlew.bat build`). Put `build/libs/cobblemon-custom-battle-music-0.2.2.jar` in the client's `mods/` folder.
 
 ## Add rules
 Include a rules JSON file at `assets/mypack/battle_music/music.json` in a resource pack.

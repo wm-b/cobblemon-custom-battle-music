@@ -27,7 +27,7 @@ def main():
                 key = re.sub(r"[^a-z0-9]", "", form.get("name", "Normal").lower())
                 forms[key] = sorted(form.get("labels", base_labels))
             catalog["cobblemon:" + Path(path).stem] = forms
-    destination = Path(__file__).resolve().parents[1] / "src/main/resources/assets/cobblemoncustombattlemusicapi/species_categories.json"
+    destination = Path(__file__).resolve().parents[1] / "src/main/resources/assets/cobblemoncustombattlemusic/species_categories.json"
     destination.write_text(json.dumps(catalog, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8")
     print(f"Generated category metadata for {len(catalog)} species")
 

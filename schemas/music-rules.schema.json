@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Cobblemon Custom Battle Music API rule document",
+  "title": "Cobblemon Custom Battle Music rule document",
   "type": "object",
   "additionalProperties": false,
   "required": [

@@ -1,16 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "cobblemon-custom-battle-music-api",
+  "id": "cobblemon-custom-battle-music",
   "version": "${version}",
-  "name": "Cobblemon Custom Battle Music API",
+  "name": "Cobblemon Custom Battle Music",
   "description": "Client-side Cobblemon battle music with intros, low-HP themes, and persistent wild appearance sounds configured exclusively by resource packs.",
   "environment": "client",
   "entrypoints": {
     "client": [
-      {
-        "adapter": "kotlin",
-        "value": "inceris.custommusic.CustomBattleMusicClient"
-      }
+      "inceris.custommusic.CustomBattleMusicClient"
     ]
   },
   "mixins": [
@@ -21,7 +18,6 @@
     "minecraft": "1.21.1",
     "java": ">=21",
     "fabric-api": "*",
-    "fabric-language-kotlin": ">=1.13.6+kotlin.2.2.20",
     "cobblemon": "=${cobblemon_version}"
   }
 }

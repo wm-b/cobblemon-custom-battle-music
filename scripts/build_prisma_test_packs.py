@@ -92,7 +92,7 @@ def build(args):
     if args.server:
         archive(args.output / "cobblemon-prisma-server.zip", {**audio, **entries})
     print(f"Built {args.variant} rule examples and command datapack in {args.output}")
-    print("Rules are resource-pack-only. Install the API mod on clients; /reload reloads commands, F3+T reloads client packs.")
+    print("Rules are resource-pack-only. Install the music mod on clients; /reload reloads commands, F3+T reloads client packs.")
 
 
 if __name__ == "__main__":
