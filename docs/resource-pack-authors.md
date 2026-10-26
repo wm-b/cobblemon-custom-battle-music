@@ -1,6 +1,6 @@
 # Battle music configuration for resource pack authors
 
-For Minecraft 1.21.1 and Cobblemon 1.8.2. Players need this mod installed and your resource pack enabled. All rule configuration and sound definitions come exclusively from enabled resource packs.
+For Minecraft 1.21.1 and Cobblemon 1.8.x. Players need this mod installed and your resource pack enabled. All rule configuration and sound definitions come exclusively from enabled resource packs.
 
 1. Add your OGG tracks, for example `assets/pack/sounds/battle/track1.ogg` and `track2.ogg`.
 2. Register each track as its own sound event in `assets/pack/sounds.json`:

@@ -10,6 +10,8 @@ import inceris.custommusic.rules.*;
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
+import net.fabricmc.loader.api.Version;
+import net.fabricmc.loader.api.metadata.version.VersionPredicate;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.objectweb.asm.ClassReader;
@@ -39,6 +41,20 @@ class IntegrationContractTest {
   private JsonObject json(Path path) throws IOException {
     try (var reader = Files.newBufferedReader(path)) {
       return JsonParser.parseReader(reader).getAsJsonObject();
+    }
+  }
+
+  @Test
+  @DisplayName("packaged dependency accepts the Cobblemon 1.8 series and rejects other series")
+  void testPackagedDependencyAcceptsTheCobblemon18SeriesAndRejectsOtherSeries() throws Exception {
+    var metadata = json(Path.of("build/resources/main/fabric.mod.json"));
+    var predicate =
+        VersionPredicate.parse(metadata.getAsJsonObject("depends").get("cobblemon").getAsString());
+    for (String version : List.of("1.8.0", "1.8.1", "1.8.2", "1.8.3", "1.8.3+1.21.1", "1.8.99")) {
+      assertTrue(predicate.test(Version.parse(version)), "Must accept Cobblemon " + version);
+    }
+    for (String version : List.of("1.7.3", "1.9.0", "2.0.0")) {
+      assertFalse(predicate.test(Version.parse(version)), "Must reject Cobblemon " + version);
     }
   }
 

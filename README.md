@@ -4,9 +4,11 @@ A client-side Fabric mod for Cobblemon battle music, intros, low-HP themes, and 
 
 ## Install
 
-Requires Minecraft **1.21.1**, Java **21**, Cobblemon **1.8.2 (Fabric)**, Fabric Loader **0.17.2+**, and Fabric API **0.116.6+1.21.1+**.
+Requires Minecraft **1.21.1**, Java **21**, Cobblemon **1.8.x (Fabric)**, Fabric Loader **0.17.2+**, and Fabric API **0.116.6+1.21.1+**. Builds against Cobblemon **1.8.3**; the runtime dependency accepts `>=1.8.0 <1.9.0`.
 
-Build with `./gradlew build` (Windows: `.\gradlew.bat build`). Put `build/libs/cobblemon-custom-battle-music-0.2.2.jar` in the client's `mods/` folder.
+Build with `./gradlew build` (Windows: `.\gradlew.bat build`). Put `build/libs/cobblemon-custom-battle-music-1.0.0.jar` in the client's `mods/` folder.
+
+Automated checks cover rule behavior and integration hooks on Cobblemon **1.8.0 through 1.8.3**. Prisma example-pack checks run only when the optional fixtures are installed under `examples/prisma-tests`.
 
 ## Add rules
 

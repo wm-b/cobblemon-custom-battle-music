@@ -16,6 +16,6 @@
     "minecraft": "1.21.1",
     "java": ">=21",
     "fabric-api": "*",
-    "cobblemon": "=${cobblemon_version}"
+    "cobblemon": "${cobblemon_version_range}"
   }
 }

@@ -43,7 +43,7 @@ spotless {
 }
 
 processResources {
-    def metadata = [version: project.version, cobblemon_version: project.cobblemon_version]
+    def metadata = [version: project.version, cobblemon_version_range: project.cobblemon_version_range]
     inputs.properties metadata
     filesMatching('fabric.mod.json') { expand metadata }
 }
