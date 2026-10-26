@@ -1,6 +1,6 @@
 """Extract the pinned Cobblemon label metadata; no textures, sounds, or species definitions are copied.
 
-Usage: python scripts/generate_species_categories.py path/to/Cobblemon-fabric-1.8.2+1.21.1.jar
+Usage: python scripts/generate_species_categories.py path/to/Cobblemon-fabric-1.8.3+1.21.1.jar
 """
 import hashlib
 import json
@@ -9,12 +9,12 @@ import re
 import sys
 import zipfile
 
-EXPECTED_SHA512 = "fe0090aa00a010a2353b4da43693ef70b675d5255756541cd679d2cf1df077ffedb790e9de66b1bd69cc9f6336d58763aeb15f146d07420d466daaeb3d992386"
+EXPECTED_SHA512 = "0cfcbc811c0434a6a8cbeda32fae5c39328a699e28b4292de635da99fc283f40166d25055594abf4eff56dd9a7a453313a5aa43f4a9969940d9e1a18dd222166"
 
 def main():
     jar_path = Path(sys.argv[1])
     if hashlib.sha512(jar_path.read_bytes()).hexdigest() != EXPECTED_SHA512:
-        raise SystemExit("Expected the official Cobblemon 1.8.2 Fabric jar (SHA-512 mismatch)")
+        raise SystemExit("Expected the official Cobblemon 1.8.3 Fabric jar (SHA-512 mismatch)")
     catalog = {}
     with zipfile.ZipFile(jar_path) as jar:
         for path in sorted(jar.namelist()):

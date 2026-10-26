@@ -3,6 +3,7 @@ package inceris.custommusic;
 import static inceris.custommusic.TestFixtures.copy;
 import static inceris.custommusic.TestFixtures.only;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 import com.google.gson.*;
 import inceris.custommusic.audio.*;
@@ -11,11 +12,20 @@ import inceris.custommusic.rules.*;
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class PrismaExamplesTest {
   private final Path root = Path.of("examples/prisma-tests");
+
+  @BeforeEach
+  void requireExamplePacks() {
+    assumeTrue(
+        Files.isDirectory(root.resolve("resourcepack"))
+            || Files.isDirectory(root.resolve("variants")),
+        "Optional Prisma example packs are not installed in examples/prisma-tests");
+  }
 
   private ParsedDocument parse(Path path) throws IOException {
     try (var reader = Files.newBufferedReader(path)) {

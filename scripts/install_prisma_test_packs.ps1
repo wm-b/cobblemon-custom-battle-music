@@ -63,7 +63,7 @@ function Write-Text([string]$target, [string]$value) {
 $artifacts = Join-Path $repository 'build\prisma-tests'
 $guide = Join-Path $repository 'examples\prisma-tests\README.md'
 $buildProperties = Get-Content -LiteralPath (Join-Path $repository 'gradle.properties') -Raw | ConvertFrom-StringData
-$modName = '{0}-{1}.jar' -f $buildProperties.archives_base_name, $buildProperties.mod_version
+$modName = '{0}_{1}.jar' -f $buildProperties.archives_base_name, $buildProperties.mod_version.Replace('.', '-')
 $mod = Join-Path $repository ('build\libs\' + $modName)
 $copies = @(
     @((Join-Path $artifacts 'prisma-battle-music-test-commands.zip'), (Join-Path $ProfileRoot 'datapacks\prisma-battle-music-test-commands.zip')),
